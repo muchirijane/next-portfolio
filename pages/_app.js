@@ -1,7 +1,24 @@
-import '../styles/globals.css'
+import { useState, useEffect } from 'react';
+import useDarkMode from 'use-dark-mode';
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme, GlobalStyles } from '../components/Theme';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+	const [ isMounted, setIsMounted ] = useState(false);
+	const darkMode = useDarkMode(true);
+	const theme = darkMode.value ? darkTheme : lightTheme;
+
+	useEffect(() => {
+		setIsMounted(true);
+	}, []);
+	return (
+		<ThemeProvider theme={theme}>
+			<GlobalStyles />
+
+			{isMounted && <Component {...pageProps} />}
+		</ThemeProvider>
+	);
 }
 
-export default MyApp
+export default MyApp;
