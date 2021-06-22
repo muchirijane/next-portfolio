@@ -1,0 +1,12 @@
+[
+	{
+		"id": 1,
+		"para1": "I am Jane, a self-taught front-end developer.",
+		"para2": "After my degree in Public Relations I did some marketing with that I got introduced to graphic design and web design. With more time on them, I got to love design and started doing User Interface for mobile applications. This is where I truly fell in love with User experience and how important it is in everything I create. ",
+		"para3": "In August 2020, I decided to learn code cause I had a lot of request if I can code what I designed. But Unfortunately I didn’t know how to code. I took some courses on Udemy like:",
+		"course1": " Advanced Sass and Css: Flexbox, Grid, Css Animations and More",
+		"course2": "The advanced Complete JavaScript Course",
+		"course3": " Gatsby Bootcamp and a couple of Youtbe videos to learn React and Gatsby.",
+		"para4": "As I learned I also started a Blog On Dev.to @Tracycss to share my knowledge. By the end to 2020, I was among the top authors with more than 100k+ views. I didn’t reliased how powerful my voice was until I started blogging about my Journey and how to build things with TailwindCss, Css and React. "
+	}
+]

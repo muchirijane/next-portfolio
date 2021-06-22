@@ -26,5 +26,10 @@ export const NavItems = styled.li`
 		color: ${({ theme }) => theme.secondaryTextColor};
 		writing-mode: vertical-rl;
 		transform: rotate(180deg);
+
+		&:hover {
+			color: #ff85ad;
+			transition: all .2s ease;
+		}
 	}
 `;

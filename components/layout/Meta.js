@@ -13,7 +13,6 @@ export default function Meta() {
 				name="description"
 				content="I am a self taught front end developer, who enjoys coding cool websites and making them user friendly. User Expericence is important in what I design and code."
 			/>
-			<html lang="em US" />
 		</Head>
 	);
 }

@@ -9,6 +9,7 @@ export default function Layout({children}) {
 	return (
 		<>
     <GlobalStyles/>
+    
     <Image className="backgroundImage" src={backgroundImg} layout={'fill'} objectFit={'cover'} alt='background pattern' />
     <Meta/>
     <Navbar/>

@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Home from './home';
-import About from './about';
 import Layout from '../components/layout/Layout';
 
 export default function Index() {
@@ -12,7 +11,7 @@ export default function Index() {
 
 			<>
 				<Home />
-				<About />
+				
 			</>
 		</Layout>
 	);

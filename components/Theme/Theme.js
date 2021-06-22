@@ -11,6 +11,7 @@ export const lightTheme = {
 	scollarTrack: '#E6E6E6',
 	backgroundTitle: '#F1F1F1',
 	primary: '#F5F5F5',
+	secondaryColor: '#000',
 	secondaryTextColor: '#000',
 	navbarShadow: '0px 20px 30px rgba(0, 0, 0, 0.2);'
 };
@@ -25,6 +26,7 @@ export const darkTheme = {
 	scollarBgHover: '#444',
 	scollarTrack: '#858484',
 	primary: '#1D1D1D',
+	secondaryColor: '#FEFEFE',
 	secondaryTextColor: '#FEFEFE',
 	navbarShadow: ' 0px 10px 40px rgba(0, 0, 0, 0.4)'
 };

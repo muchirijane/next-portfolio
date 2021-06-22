@@ -1,11 +1,16 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;800;900&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;800;900&family=Roboto:wght@700&family=Montserrat:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+}
+:root{
+  --color-white: #fff;
+  --dark-pink: #E861A4;
+  --light-pink: #FF6F8D;
 }
 html {
     box-sizing: border-box;
@@ -23,10 +28,7 @@ html {
     //     font-size: 100%;
     // }
 }
-:root{
-  $bg-colour: "#F5F5F5";
-  $text-colour: "#444444"
-}
+
 body{
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
@@ -35,14 +37,34 @@ body{
     height: 100vh;
 }
 
-.button{
-padding: 2rem 3rem;
-background: #fff;
-color: #000;
+.link{
+  text-decoration: none;
+  cursor: pointer;
+background: ${({ theme }) => theme.secondaryColor};
+color: ${({ theme }) => theme.primary};
+
+
+&:hover{
+  background: var(--dark-pink);
+  color: var(--colour-white);
+  
+  transition: all .3s ease-in ;
+
+  span{
+    color: var(--colour-white);
+    margin-left: 1.4rem;
+  }
+}
 }
 
 footer{
   text-align: center;
+  letter-spacing: 2px;
+  z-index: 2000;
+  a{
+    color: var(--light-pink);
+    text-decoration: none;
+  }
 }
 
 `;

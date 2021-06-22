@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import useDarkMode from 'use-dark-mode';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme, GlobalStyles } from '../components/Theme';
+import { lightTheme, darkTheme, GlobalStyles } from '../components/Theme/Theme';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
