@@ -1,0 +1,40 @@
+[
+	{
+		"id": 2,
+		"html": "/icons/html.svg",
+		"htmlDesc": "HTML",
+		"css": "/icons/css.svg",
+		"cssDesc": "CSS",
+		"sass": "/icons/scss.svg",
+		"sassDesc": "SASS",
+		"js": "/icons/js.svg",
+		"jsDesc": "JavaScript",
+		"react": "/icons/react.svg",
+		"reactDesc": "React JS",
+		"styled": "/icons/styled.svg",
+		"styledDesc": "Styled-components",
+		"graphql": "/icons/graphql.svg",
+		"graphqlDesc": "Graphql",
+		"gatsby": "/icons/gatsby.svg",
+		"gatsbyDesc": "Gatsby Js",
+		"git": "/icons/git.svg",
+		"gitDesc": "Git",
+		"npm": "/icons/npm.svg",
+		"npmDesc": "Npm",
+		"terminal": "/icons/terminal.svg",
+		"terminalDesc": "Terminal",
+		"vscode": "/icons/vscode.svg",
+		"vscodeDesc": "Vs-Code"
+	},
+	{
+		"id": "design",
+		"ps": "/icons/photoshop.svg",
+		"psDesc": "Photoshop",
+		"xd": "/icons/xd.svg",
+		"xdDesc": "Adobe-XD",
+		"figma": "/icons/figma.svg",
+		"figmaDesc": "Figma",
+		"zeplin": "/icons/zeplin.svg",
+		"zeplinDesc": "/icons/zeplin.svg"
+	}
+]

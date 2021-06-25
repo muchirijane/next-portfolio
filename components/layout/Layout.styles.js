@@ -21,9 +21,9 @@ html {
     // @media only screen and (max-width: 1100px){
     //     font-size: 55%;
     // }
-    // @media only screen and (min-width: 1900px){
-    //     font-size: 90%;
-    // }
+     /* @media only screen and (min-width: 1900px){
+         font-size: 120%;
+    } */
     // @media only screen and (min-width: 2000px){
     //     font-size: 100%;
     // }
@@ -35,6 +35,13 @@ body{
     line-height: 1.6;
     font-size: 1.6rem; 
     height: 100vh;
+}
+
+.backgroundImage {
+	height: auto;
+  width: 100%;
+	z-index: -1;
+	filter: ${({ theme }) => theme.filterBg}
 }
 
 .link{

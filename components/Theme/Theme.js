@@ -37,11 +37,6 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     transition: all 0.50s linear;
   }
-  .backgroundImage {
-	height: 100vh;
-	z-index: -1;
-	filter: ${({ theme }) => theme.filterBg}
-}
 .backgroundColour {
 	background-color: ${({ theme }) => theme.primary}
 }

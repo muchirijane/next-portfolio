@@ -5,8 +5,22 @@
 		"para2": "After my degree in Public Relations I did some marketing with that I got introduced to graphic design and web design. With more time on them, I got to love design and started doing User Interface for mobile applications. This is where I truly fell in love with User experience and how important it is in everything I create. ",
 		"para3": "In August 2020, I decided to learn code cause I had a lot of request if I can code what I designed. But Unfortunately I didn’t know how to code. I took some courses on Udemy like:",
 		"course1": " Advanced Sass and Css: Flexbox, Grid, Css Animations and More",
-		"course2": "The advanced Complete JavaScript Course",
+		"course2": " The advanced Complete JavaScript Course",
 		"course3": " Gatsby Bootcamp and a couple of Youtbe videos to learn React and Gatsby.",
-		"para4": "As I learned I also started a Blog On Dev.to @Tracycss to share my knowledge. By the end to 2020, I was among the top authors with more than 100k+ views. I didn’t reliased how powerful my voice was until I started blogging about my Journey and how to build things with TailwindCss, Css and React. "
+		"course1Link": "",
+		"course2Link": "",
+		"course3Link": "",
+		"para4": "As I learned I also started  ",
+		"devText": "a Blog On Dev.to @Tracycss ",
+		"devLink": "https://dev.to/tracycss",
+		"spanText": "to share my knowledge. By the end to 2020, I was among the top authors with more than 100k+ views. Also this made me to be selected as a moderator for the Dev.to developer platform in 2021. I didn’t reliased how powerful my voice was until I started blogging about my Journey and how to build things with TailwindCss, Css and React. This journey created a new path where I became a Technical writer for Youtube developers.",
+		"scriptText": " Created an amazing script for KalleTech team which got amazing reviews and comments and 400k views.",
+		"scriptLink": "https://www.youtube.com/watch?v=IUZTbEaDo0U&t=43s",
+		"para5": "I love mentoring new developers who learning HTML, CSS and SASS by helping them build basic websites to improve their performance. Not only that, but also give feedback on their web design and show them how to improve the user interface. User centered design is something front end developers should learn and care about. Found a create community at ",
+		"serverText": "KalleTech where I am a moderator and mentor code newbies.",
+		"serverLink": "https://discord.gg/7sAGu2QS6f",
+		"para6": "Apart from front-end development, I loving doing mobile user interface design with great user experience. User centered design is something I always advocate for among my clients and other designers. Helping mobile developers turn their ideas into an app any user can easily navigate through is amazing. I start by creating low wireframes from pen and paper to high fedility prototypes in Figma or Adobe XD.",
+		"designText": " Some of my designs on Behance.",
+		"designLink": "https://www.behance.net/muchirijane"
 	}
 ]
