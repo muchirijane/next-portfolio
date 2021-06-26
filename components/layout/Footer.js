@@ -15,7 +15,7 @@ export default function Footer() {
 			<p>
 				copyright &copy; {new Date().getFullYear()}{' '}
 				<a href="https://github.com/muchirijane" target="_blank" rel="noopener noreferrer">
-					Jane Muthoni
+					Jane Muchiri
 				</a>
 			</p>
 		</footer>

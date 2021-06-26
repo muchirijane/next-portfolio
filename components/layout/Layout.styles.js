@@ -1,8 +1,10 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;800;900&family=Roboto:wght@700&family=Montserrat:wght@700&display=swap');
-*{
+
+*,
+*::before, 
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -21,9 +23,7 @@ html {
     // @media only screen and (max-width: 1100px){
     //     font-size: 55%;
     // }
-     /* @media only screen and (min-width: 1900px){
-         font-size: 120%;
-    } */
+     
     // @media only screen and (min-width: 2000px){
     //     font-size: 100%;
     // }
@@ -35,6 +35,10 @@ body{
     line-height: 1.6;
     font-size: 1.6rem; 
     height: 100vh;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Montserrat', sans-serif;
 }
 
 .backgroundImage {

@@ -1,15 +1,13 @@
 import Link from 'next/link';
-import Image from 'next/image';
+
 import Typewriter from 'react-simple-typewriter';
-import { HomeContent, HomeContainer, PageLink } from '../styles/Home.styles';
+import { HomeContent, Span, HomeContainer, PageLink, AboutLink, AboutContainer } from '../styles/Home.styles';
+import { AboutContent } from '../styles/About.styles';
 import data from '../data/About.json';
-import TitleBg from '../public/background-title.svg';
 
 export default function Home() {
 	return (
 		<HomeContainer>
-			<Image className="backgroundImage" src={TitleBg} alt="background title named front end" />
-
 			<HomeContent>
 				<h3>
 					Hello there,{' '}
@@ -20,7 +18,7 @@ export default function Home() {
 				<h2>I am Jane Tracy . </h2>
 				<h1>
 					A{' '}
-					<span>
+					<Span>
 						<Typewriter
 							loop
 							cursor
@@ -30,7 +28,7 @@ export default function Home() {
 							delaySpeed={1000}
 							words={[ 'creative', 'passionate', 'dedicated' ]}
 						/>
-					</span>{' '}
+					</Span>{' '}
 					developer{' '}
 				</h1>
 				<p>
@@ -45,33 +43,39 @@ export default function Home() {
 					</PageLink>
 				</Link>
 			</HomeContent>
-			{data.map((data) => (
-				<div key={data.id}>
-					<p>
-						{data.para3}
-						<a href={data.course1Link} target="_blank" rel="noopener noreferrer">
-							{data.course1}
-						</a>,
-						<a href={data.course2Link} target="_blank" rel="noopener noreferrer">
-							{data.course2}
-						</a>{' '}
-						and
-						<a href={data.course3Link} target="_blank" rel="noopener noreferrer">
-							{data.course3}
-						</a>
-					</p>
-					<p>
-						{data.para4}
-						<a href={data.devLink} target="_blank" rel="noopener noreferrer">
-							{data.devText}
-						</a>
-						<span>{data.spanText}</span>
-						<a href={data.scriptLink} target="_blank" rel="noopener noreferrer">
-							{data.scriptText}
-						</a>
-					</p>
-				</div>
-			))}
+			<AboutContainer>
+				<h2>About Me</h2>
+				{data.map((data) => (
+					<AboutContent key={data.id}>
+						<p>
+							{data.para3}
+							<a href={data.course1Link} target="_blank" rel="noopener noreferrer">
+								{data.course1}
+							</a>,
+							<a href={data.course2Link} target="_blank" rel="noopener noreferrer">
+								{data.course2}
+							</a>{' '}
+							and
+							<a href={data.course3Link} target="_blank" rel="noopener noreferrer">
+								{data.course3}
+							</a>
+						</p>
+						<p>
+							{data.para4}
+							<a href={data.devLink} target="_blank" rel="noopener noreferrer">
+								{data.devText}
+							</a>
+							<span>{data.spanText}</span>
+							<a href={data.scriptLink} target="_blank" rel="noopener noreferrer">
+								{data.scriptText}
+							</a>
+						</p>
+					</AboutContent>
+				))}
+				<Link href="/about">
+					<AboutLink className="link">Learn More</AboutLink>
+				</Link>
+			</AboutContainer>
 		</HomeContainer>
 	);
 }

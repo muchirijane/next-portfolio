@@ -7,7 +7,7 @@ export const TechContainer = styled.div`
 `;
 export const TechContent = styled.div`
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	grid-row-gap: 4rem;
 `;
 export const TechIconItem = styled.div`
