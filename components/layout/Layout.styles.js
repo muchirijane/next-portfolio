@@ -37,6 +37,11 @@ body{
     height: 100vh;
 }
 
+::selection {
+	background: var(--dark-pink);
+}
+
+
 h1, h2, h3, h4, h5{
   font-family: 'Montserrat', sans-serif;
 }

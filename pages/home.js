@@ -1,47 +1,51 @@
 import Link from 'next/link';
-
+import Image from 'next/image';
 import Typewriter from 'react-simple-typewriter';
-import { HomeContent, Span, HomeContainer, PageLink, AboutLink, AboutContainer } from '../styles/Home.styles';
+import { HomeContent, Span, HomeContainer, PageLink, AboutLink, AboutContainer,HomeText } from '../styles/Home.styles';
 import { AboutContent } from '../styles/About.styles';
 import data from '../data/About.json';
+import profile from '../public/girl.svg';
 
 export default function Home() {
 	return (
 		<HomeContainer>
 			<HomeContent>
-				<h3>
-					Hello there,{' '}
-					<span role="img" alt="waving hand emoji" aria-label=" waving hand emoji">
-						👋🏽{' '}
-					</span>{' '}
-				</h3>
-				<h2>I am Jane Tracy . </h2>
-				<h1>
-					A{' '}
-					<Span>
-						<Typewriter
-							loop
-							cursor
-							cursorStyle="😎"
-							typeSpeed={70}
-							deleteSpeed={50}
-							delaySpeed={1000}
-							words={[ 'creative', 'passionate', 'dedicated' ]}
-						/>
-					</Span>{' '}
-					developer{' '}
-				</h1>
-				<p>
-					I am a self taught front end developer, who enjoys coding cool websites and making them user
-					friendly and easy to navigate. User Expericence is important in what I create.{' '}
-				</p>
+				<Image className="rotate-img" src={profile} alt="3d design of a happy girl" />
+				<HomeText>
+					<h3>
+						Hello there,{' '}
+						<span role="img" alt="waving hand emoji" aria-label=" waving hand emoji">
+							👋🏽{' '}
+						</span>{' '}
+					</h3>
+					<h2>I am Jane Tracy . </h2>
+					<h1>
+						A{' '}
+						<Span>
+							<Typewriter
+								loop
+								cursor
+								cursorStyle="😎"
+								typeSpeed={70}
+								deleteSpeed={50}
+								delaySpeed={1000}
+								words={[ 'creative', 'passionate', 'dedicated' ]}
+							/>
+						</Span>{' '}
+						developer{' '}
+					</h1>
+					<p>
+						I am a self taught front end developer, who enjoys coding cool websites and making them user
+						friendly and easy to navigate. User Expericence is important in what I create.{' '}
+					</p>
 
-				<Link href="/contact">
-					<PageLink className="link">
-						Hire Me
-						<span>&rarr;</span>
-					</PageLink>
-				</Link>
+					<Link href="/contact">
+						<PageLink className="link">
+							Hire Me
+							<span>&rarr;</span>
+						</PageLink>
+					</Link>
+				</HomeText>
 			</HomeContent>
 			<AboutContainer>
 				<h2>About Me</h2>
