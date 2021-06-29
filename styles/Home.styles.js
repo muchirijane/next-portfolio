@@ -31,7 +31,7 @@ export const HomeContent = styled.div`
 		letter-spacing: 2px;
 	}
 `;
-export const HomeText = styled.div` marign-top: 3rem;`;
+export const HomeText = styled.div`margin-top: 3rem;`;
 export const Span = styled.span`color: #ff85ad;`;
 
 export const PageLink = styled.a`

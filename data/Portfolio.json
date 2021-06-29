@@ -1,0 +1,42 @@
+[
+	{
+		"id": "portfolio1",
+		"image": "/portfolio/next-crypto-tracker.gif",
+		"alt": "my portfolio website",
+		"title": "My Portfolio",
+		"preview": "https://github.com/muchirijane",
+		"source": "https://github.com/muchirijane",
+		"stack": [ "React", "Gatsby", "styled-compoents", "Framer-Motion", " Graphql" ],
+		"content": "The current website you are viewing is one of my awesome site I have coded. I wanted it to be static and fast, hence I built it with Gatsby. I also used markdown files especially for the blog section. This helps me add new posts with easy."
+	},
+	{
+		"id": "portfolio2",
+		"image": "/portfolio/next-crypto-tracker.gif",
+		"alt": "Home made website",
+		"title": "HomeMade Website",
+		"preview": "https://muchirijane.github.io/Home-made-React/",
+		"source": "https://github.com/muchirijane/Home-made-React",
+		"stack": [ "React", "Gatsby", "styled-compoents", "Framer-Motion", " Graphql" ],
+		"content": "A food website for ordering food that you can cook at home by following recipe guidelines. The website is built with React and styled-components. This was a great practice to transform my Figma design into a React site."
+	},
+	{
+		"id": "portfolio3",
+		"image": "/portfolio/next-crypto-tracker.gif",
+		"alt": "Nairobi color theme",
+		"title": "Nairobi Night Color Theme",
+		"preview": "https://marketplace.visualstudio.com/items?itemName=JaneTracyMuthoni.nairobi-night",
+		"source": "https://github.com/muchirijane/Nairobi-Night-Color-Theme",
+		"stack": [ "VS-Code" ],
+		"content": "Nairobi Night is a VS code colour theme that comes in both light mode and dark mode. Got inspirition from the city under the sun and the beautiful lights at night along the streets."
+	},
+	{
+		"id": "portfolio4",
+		"image": "/portfolio/next-crypto-tracker.gif",
+		"alt": "Rico The chatbot",
+		"title": "Rico The chatbot",
+		"preview": "https://muchirijane.github.io/Rico-chatbot/",
+		"source": "https://github.com/muchirijane/Rico-chatbot",
+		"stack": [ "React", "Gatsby", "styled-compoents", "Framer-Motion", " Graphql" ],
+		"content": "This is a project I created as I learned JavaScript.  The idea behind the project was to create a dev chatbot where users an ask questions on how to get started with web development. Rico can answer questions like where to learn html and css, where to learn react js or just vanilla JavaScript. "
+	}
+]

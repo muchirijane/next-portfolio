@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Typewriter from 'react-simple-typewriter';
-import { HomeContent, Span, HomeContainer, PageLink, AboutLink, AboutContainer,HomeText } from '../styles/Home.styles';
+
+import { HomeContent, Span, HomeContainer, PageLink, AboutLink, AboutContainer, HomeText } from '../styles/Home.styles';
 import { AboutContent } from '../styles/About.styles';
 import data from '../data/About.json';
 import profile from '../public/girl.svg';

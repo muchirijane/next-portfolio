@@ -13,6 +13,8 @@ const GlobalStyles = createGlobalStyle`
   --color-white: #fff;
   --dark-pink: #E861A4;
   --light-pink: #FF6F8D;
+  --lighter-pink:  rgba(232, 97, 164, 0.52);
+  --pink-shadow:  0px 3px 10px rgba(232, 97, 164, 0.2);
 }
 html {
     box-sizing: border-box;
@@ -63,6 +65,29 @@ color: ${({ theme }) => theme.primary};
 &:hover{
   background: var(--dark-pink);
   color: var(--colour-white);
+  
+  transition: all .3s ease-in ;
+
+  span{
+    color: var(--colour-white);
+    margin-left: 1.4rem;
+  }
+}
+}
+
+.outline-link{
+  text-decoration: none;
+  cursor: pointer;
+border: 1px solid ${({ theme }) => theme.secondaryColor};
+
+color: ${({ theme }) => theme.secondaryColor};
+background: none;
+
+
+&:hover{
+  background: var(--dark-pink);
+  color: var(--colour-white);
+  border: none;
   
   transition: all .3s ease-in ;
 

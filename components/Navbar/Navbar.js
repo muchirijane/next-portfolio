@@ -23,7 +23,7 @@ export default function Navbar() {
 						</Link>
 					</NavItems>
 					<NavItems>
-						<Link href="/projects">
+						<Link href="/portfolio">
 							<a>Projects</a>
 						</Link>
 					</NavItems>
