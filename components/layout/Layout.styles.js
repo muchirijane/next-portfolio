@@ -55,6 +55,15 @@ h1, h2, h3, h4, h5{
 	filter: ${({ theme }) => theme.filterBg}
 }
 
+button{
+  border: none;
+  padding: 1.6rem 3rem;
+}
+.center{
+  display: inline-block;
+  margin: 3rem auto;
+}
+
 .link{
   text-decoration: none;
   cursor: pointer;

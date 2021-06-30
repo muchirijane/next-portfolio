@@ -6,10 +6,11 @@ import { HomeContent, Span, HomeContainer, PageLink, AboutLink, AboutContainer, 
 import { AboutContent } from '../styles/About.styles';
 import data from '../data/About.json';
 import profile from '../public/girl.svg';
+import Portfolio from './portfolio';
 
 export default function Home() {
 	return (
-		<HomeContainer>
+		<HomeContainer id="home">
 			<HomeContent>
 				<Image className="rotate-img" src={profile} alt="3d design of a happy girl" />
 				<HomeText>
@@ -81,6 +82,7 @@ export default function Home() {
 					<AboutLink className="link">Learn More</AboutLink>
 				</Link>
 			</AboutContainer>
+			<Portfolio />
 		</HomeContainer>
 	);
 }

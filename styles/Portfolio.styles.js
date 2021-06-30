@@ -2,17 +2,23 @@ import styled from 'styled-components';
 
 export const PortfolioContainer = styled.section`
 	width: 90%;
-	margin: 5rem auto;
+	margin-top: 6rem;
+	display: flex;
+	flex-direction: column;
 `;
 export const FeaturedPortfolios = styled.div`
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-	grid-gap: 6rem;
+	grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
+	grid-gap: 5rem;
 `;
 export const PortfolioContent = styled.div`
-	width: 45rem;
+	width: 46rem;
 	min-height: 58rem;
 	position: relative;
+	box-shadow: ${({ theme }) => theme.bigShadow};
+`;
+export const PortfolioImage = styled.div`
+	background: rgba(0, 0, 0, 0.3);
 	img {
 		background: var(--dark-pink);
 	}
@@ -23,13 +29,9 @@ export const PortfolioText = styled.div`
 	/* min-height: 32rem; */
 	clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
 	margin-top: -7rem;
-	position: absolute;
-	z-index: 100;
-	padding: 7rem 3rem;
 
-	img {
-		z-index: 1;
-	}
+	padding: 7rem 3rem 2rem 3rem;
+
 	h3 {
 		font-size: clamp(2.2rem, 80%, 9rem);
 		font-weight: 700;

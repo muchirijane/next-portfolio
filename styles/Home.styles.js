@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HomeContainer = styled.section`
 	margin: 10rem auto;
-	width: 90%;
+	width: 80%;
 `;
 export const HomeContent = styled.div`
 	margin-top: 12rem;
