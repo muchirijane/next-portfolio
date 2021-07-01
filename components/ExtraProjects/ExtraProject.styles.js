@@ -10,7 +10,7 @@ export const ProjectWrapper = styled.div`
 		margin-top: 4rem;
 	}
 	h3 {
-		font-size: clamp(1.8rem 60% 8rem;);
+		font-size: clamp(2rem, 60%, 8rem);
 	}
 `;
 

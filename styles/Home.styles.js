@@ -8,11 +8,6 @@ export const HomeContent = styled.div`
 	margin-top: 12rem;
 	display: flex;
 	flex-direction: row-reverse;
-	img {
-		&:hover {
-			transform: rotate(360deg);
-		}
-	}
 
 	h3 {
 		font-size: clamp(2rem, 70%, 6rem);
