@@ -111,6 +111,8 @@ footer{
   text-align: center;
   letter-spacing: 2px;
   z-index: 2000;
+  font-size: clamp(1.4rem, 40%, 6rem);
+  font-weight: 300;
   a{
     color: var(--light-pink);
     text-decoration: none;

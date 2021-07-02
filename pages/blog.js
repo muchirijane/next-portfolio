@@ -1,4 +1,5 @@
 import { createClient } from 'contentful';
+import Head from 'next/head';
 import Layout from '../components/layout/Layout';
 import BlogCard from '../components/template/BlogCard';
 import { BlogWrapper, BlogContainer } from '../styles/Blog.styles';
@@ -20,6 +21,9 @@ export default function Blog({ blogs }) {
 	console.log(blogs);
 	return (
 		<Layout>
+			<Head>
+				<title>My Blog</title>
+			</Head>
 			<BlogWrapper>
 				<h1>
 					My Blog{' '}

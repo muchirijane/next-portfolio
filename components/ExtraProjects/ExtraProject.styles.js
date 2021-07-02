@@ -24,6 +24,19 @@ export const ProjectContent = styled.div`
 	background-color: ${({ theme }) => theme.tertiaryColor};
 	box-shadow: ${({ theme }) => theme.bigShadow};
 	padding: 3rem;
+	h3 {
+		font-weight: 800;
+	}
+	p {
+		font-size: clamp(1.5rem 60% 7rem);
+	}
+
+	span {
+		display: inline-block;
+		font-weight: 300;
+		font-size: clamp(1.4rem, 60%, 6rem);
+		margin-top: 2rem;
+	}
 `;
 
 export const ProjectLink = styled.div`
