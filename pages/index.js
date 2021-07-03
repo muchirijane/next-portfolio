@@ -10,6 +10,7 @@ import { AboutContent } from '../styles/About.styles';
 import data from '../data/About.json';
 import profile from '../public/girl.svg';
 import Portfolio from './portfolio';
+import Contact from './contact';
 
 export default function Index() {
 	return (
@@ -91,6 +92,7 @@ export default function Index() {
 					</Link>
 				</AboutContainer>
 				<Portfolio />
+				<Contact />
 			</HomeContainer>
 		</Layout>
 	);
