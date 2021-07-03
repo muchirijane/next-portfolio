@@ -13,8 +13,11 @@ const GlobalStyles = createGlobalStyle`
   --color-white: #fff;
   --dark-pink: #E861A4;
   --light-pink: #FF6F8D;
+  --light-brown: #C68900;
   --lighter-pink:  rgba(232, 97, 164, 0.52);
   --pink-shadow:  0px 3px 10px rgba(232, 97, 164, 0.2);
+  --big-shadow:  0px 10px 40px rgba(0, 0, 0, 0.1);
+  --medium-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
 }
 html {
     box-sizing: border-box;
@@ -64,7 +67,10 @@ button{
   margin: 3rem auto;
 }
 
+
+
 .link{
+  display: inline-block;
   text-decoration: none;
   cursor: pointer;
 background: ${({ theme }) => theme.secondaryColor};
@@ -72,15 +78,21 @@ color: ${({ theme }) => theme.primary};
 
 
 &:hover{
+
   background: var(--dark-pink);
   color: var(--colour-white);
+  transform: translateY(-2px);
+  transition: all .3s cubic-bezier(.88, .17, .05, 1);
   
-  transition: all .3s ease-in ;
 
   span{
     color: var(--colour-white);
     margin-left: 1.4rem;
   }
+}
+&:active{
+  transform: translateY(2px);
+  transition: all .3s cubic-bezier(.88, .17, .05, 1);
 }
 }
 

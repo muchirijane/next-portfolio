@@ -15,8 +15,10 @@ export const lightTheme = {
 	secondaryTextColor: '#000',
 	tertiaryColor: '#FCFCFC',
 	darkerColor: '#262626',
+	codeBg: '#FCFCFC',
 	navbarShadow: '0px 20px 30px rgba(0, 0, 0, 0.2);',
-	bigShadow: '0px 10px 40px rgba(0, 0, 0, 0.1)'
+	bigShadow: '0px 10px 40px rgba(0, 0, 0, 0.1)',
+	smallShadow: '0px 5px 20px rgba(0, 0, 0, 0.1)'
 };
 
 export const darkTheme = {
@@ -33,8 +35,10 @@ export const darkTheme = {
 	darkerColor: '#FEFEFE',
 	secondaryColor: '#FEFEFE',
 	secondaryTextColor: '#FEFEFE',
+	codeBg: '#333',
 	navbarShadow: ' 0px 10px 40px rgba(0, 0, 0, 0.4)',
-	bigShadow: '0px 10px 40px rgba(0, 0, 0, 0.36)'
+	bigShadow: '0px 10px 40px rgba(0, 0, 0, 0.36)',
+	smallShadow: '0px 5px 20px rgba(0, 0, 0, 0.1)'
 };
 
 export const GlobalStyles = createGlobalStyle`

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-
 import { createClient } from 'contentful';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import Head from 'next/head';
 
+import Head from 'next/head';
 import Image from 'next/image';
+
 import Layout from '../../components/layout/Layout';
-import { PostContainer, PostText } from '../../styles/Post.styles';
+import { PostContainer, PostTags } from '../../styles/Post.styles';
+
 const client = createClient({
 	space: process.env.CONTENTFUL_SPACE_ID,
 	accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
@@ -43,7 +43,10 @@ export async function getStaticProps({ params }) {
 
 export default function BlogContent({ blog }) {
 	console.log(blog);
+
 	const { featuredImage, title, tags, blogPost } = blog.fields;
+	const tagList = tags.map((tag) => <span key={title}>#{tag}</span>);
+
 	return (
 		<Layout>
 			<Head>
@@ -60,8 +63,9 @@ export default function BlogContent({ blog }) {
 				</div>
 				<h1>{title}</h1>
 
-				<div>{tags.map((tag) => <span>#{tag}</span>)}</div>
+				<PostTags>{tagList}</PostTags>
 				<ReactMarkdown>{blogPost}</ReactMarkdown>
+				<ReactMarkdown>{blogPost.h1}</ReactMarkdown>
 			</PostContainer>
 		</Layout>
 	);

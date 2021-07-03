@@ -3,16 +3,21 @@ import styled from 'styled-components';
 export const BlogContent = styled.div`
 	cursor: pointer;
 	width: 36rem;
+	transition: all .2s cubic-bezier(.88, .17, .05, 1);
 
 	&:hover {
-		transition: all .3s cubic-bezier(.88, .17, .05, 1);
-		box-shadow: ${({ theme }) => theme.bigShadow};
+		transition: all .2s cubic-bezier(.88, .17, .05, 1);
+		box-shadow: var(--medium-shadow);
 
 		h3 {
-			color: var(--dark-pink);
+			text-decoration: underline;
 		}
 		span {
 			color: var(--dark-pink);
+		}
+		img {
+			transition: all .2s cubic-bezier(.88, .17, .05, 1);
+			transform: scale(1.1);
 		}
 	}
 `;
