@@ -5,6 +5,10 @@ export default function thankyou() {
 		<Layout>
 			<div>
 				<h1>Thank you!!!</h1>
+				<p>
+					I will responsed to your email soon, take a look at the blog section to read something new about web
+					development
+				</p>
 			</div>
 		</Layout>
 	);
