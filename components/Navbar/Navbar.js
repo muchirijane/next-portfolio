@@ -23,7 +23,7 @@ export default function Navbar() {
 						</Link>
 					</NavItems>
 					<NavItems>
-						<Link href="#portfolio">
+						<Link href="/ ">
 							<a>Projects</a>
 						</Link>
 					</NavItems>
@@ -33,7 +33,7 @@ export default function Navbar() {
 						</Link>
 					</NavItems>
 					<NavItems>
-						<Link href="/contact">
+						<Link href="/">
 							<a>Contact</a>
 						</Link>
 					</NavItems>

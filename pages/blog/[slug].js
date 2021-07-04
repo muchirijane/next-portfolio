@@ -65,7 +65,6 @@ export default function BlogContent({ blog }) {
 
 				<PostTags>{tagList}</PostTags>
 				<ReactMarkdown>{blogPost}</ReactMarkdown>
-				<ReactMarkdown>{blogPost.h1}</ReactMarkdown>
 			</PostContainer>
 		</Layout>
 	);

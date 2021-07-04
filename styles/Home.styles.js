@@ -48,12 +48,12 @@ export const AboutContainer = styled.section`
 	margin-top: 16rem;
 	width: 90%;
 	h2 {
-		font-size: clamp(6rem, 90%, 9rem);
+		font-size: clamp(4rem, 90%, 9rem);
 		font-family: 'Montserrat', sans-serif;
 	}
 
 	p {
-		font-size: clamp(2.2rem, 80%, 9rem);
+		font-size: clamp(2rem, 80%, 9rem);
 
 		/* width: 77%;
 		letter-spacing: 2px; */

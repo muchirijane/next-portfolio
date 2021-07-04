@@ -16,8 +16,8 @@ const GlobalStyles = createGlobalStyle`
   --light-brown: #C68900;
   --lighter-pink:  rgba(232, 97, 164, 0.52);
   --pink-shadow:  0px 3px 10px rgba(232, 97, 164, 0.2);
-  --big-shadow:  0px 10px 40px rgba(0, 0, 0, 0.1);
-  --medium-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  --big-shadow:  0px 8px 30px rgba(0, 0, 0, 0.1);
+  --medium-shadow: 0px 5px 20px  rgba(0, 0, 0, 0.05);
 }
 html {
     box-sizing: border-box;
@@ -67,7 +67,25 @@ button{
   margin: 3rem auto;
 }
 
+.link-animated{
+  
+		display: inline-block;
+		color: var(--dark-pink);
+		text-decoration: none;
 
+		&:hover {
+			transition: all .3s cubic-bezier(.88, .17, .05, 1);
+			color: var(--light-pink);
+			text-decoration: none;
+			transform: translateY(-2px);
+		}
+
+		&:active {
+			transition: all .3s cubic-bezier(.88, .17, .05, 1);
+			transform: translateY(3px);
+		}
+	
+}
 
 .link{
   display: inline-block;

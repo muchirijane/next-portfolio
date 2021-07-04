@@ -2,9 +2,14 @@ import styled from 'styled-components';
 
 export const PortfolioContainer = styled.section`
 	width: 90%;
-	margin-top: 6rem;
+	margin-top: 10rem;
 	display: flex;
 	flex-direction: column;
+
+	h2 {
+		font-size: clamp(4rem, 50%, 10rem);
+		margin-bottom: 3rem;
+	}
 `;
 export const FeaturedPortfolios = styled.div`
 	display: grid;

@@ -5,7 +5,7 @@ export const AboutSection = styled.section`
 	width: 80%;
 	z-index: 3000;
 	h1 {
-		font-size: clamp(4rem, 60%, 10rem);
+		font-size: clamp(4rem, 50%, 10rem);
 		font-family: 'Montserrat', sans-serif;
 	}
 `;

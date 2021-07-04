@@ -21,6 +21,7 @@ export const NavItems = styled.li`
 	padding: 3rem 2rem;
 	a {
 		font-family: 'Roboto', sans-serif;
+		font-size: clamp(1.6rem, 50%, 10rem);
 		text-decoration: none;
 		letter-spacing: 3px;
 		color: ${({ theme }) => theme.secondaryTextColor};
