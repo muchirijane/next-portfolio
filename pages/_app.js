@@ -3,7 +3,7 @@ import useDarkMode from 'use-dark-mode';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme, GlobalStyles } from '../components/Theme/Theme';
 import '../styles/globals.css';
- import "prismjs/themes/prism-tomorrow.css";
+//  import "prismjs/themes/prism-tomorrow.css";
 
 function MyApp({ Component, pageProps }) {
 	const [ isMounted, setIsMounted ] = useState(false);

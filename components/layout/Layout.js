@@ -1,4 +1,5 @@
-import Prism from "Prismjs";
+// import Prism from "Prismjs";
+// import  "Prismjs";
 import {useEffect} from 'react'
 import Meta from './Meta';
 import Navbar from '../Navbar/Navbar'
@@ -9,9 +10,9 @@ import GlobalStyles from './Layout.styles';
 import {Container} from './Layout.styles';
   
 export default function Layout({children}) {
-   useEffect(() => {
-      Prism.highlightAll();
-    }, []);
+   // useEffect(() => {
+   //    Prism.highlightAll();
+   //  }, []);
 	return (
 		<>
     <GlobalStyles/>
