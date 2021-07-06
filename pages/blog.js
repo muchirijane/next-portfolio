@@ -11,9 +11,8 @@ export async function getStaticProps() {
 
 	const res = await client.getEntries({ content_type: 'portfolio' });
 	return {
-		props: {
-			blogs: res.items
-		}
+		props: { blogs: res.items },
+		revalidate: 2
 	};
 }
 

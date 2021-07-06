@@ -23,12 +23,15 @@ export const ProjectContainer = styled.div`
 export const ProjectContent = styled.div`
 	background-color: ${({ theme }) => theme.tertiaryColor};
 	box-shadow: ${({ theme }) => theme.bigShadow};
-	padding: 3rem;
+	padding: 3rem 2.5rem;
 	h3 {
+		font-size: clamp(1.8rem 60% 7rem);
 		font-weight: 800;
+		margin-bottom: 1.5rem;
 	}
 	p {
 		font-size: clamp(1.5rem 60% 7rem);
+		letter-spacing: .8px;
 	}
 
 	span {
@@ -49,6 +52,10 @@ export const ProjectLink = styled.div`
 
 		&:not(:last-child) {
 			margin-right: 2rem;
+		}
+
+		svg {
+			margin-right: .8rem;
 		}
 	}
 `;

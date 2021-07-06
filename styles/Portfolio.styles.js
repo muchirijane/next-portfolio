@@ -44,6 +44,8 @@ export const PortfolioText = styled.div`
 	}
 	p {
 		margin-top: 1rem;
+		font-size: clamp(1.7rem, 80%, 9rem);
+		letter-spacing: 1px;
 	}
 `;
 export const PortfolioStack = styled.span`

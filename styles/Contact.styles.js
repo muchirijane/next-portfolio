@@ -8,7 +8,7 @@ export const ContactContainer = styled.section`
 		font-size: clamp(3rem, 50%, 10rem);
 	}
 	p {
-		font-size: clamp(1.8rem, 30%, 6rem);
+		font-size: clamp(2rem, 30%, 6rem);
 		&:not(:first-child) {
 			margin-top: 3rem;
 		}
@@ -33,6 +33,7 @@ export const ContactSocials = styled.div`
 	}
 
 	a {
+		transition: all .2s cubic-bezier(.84, .17, .06, 1.24);
 		&:not(:first-child) {
 			margin-left: 2rem;
 		}
@@ -48,9 +49,13 @@ export const ContactSocials = styled.div`
 
 export const ContactForm = styled.div`
 	background-color: ${({ theme }) => theme.primary};
-	box-shadow: var(--medium-shadow);
+	box-shadow: ${({ theme }) => theme.bigShadow};
 	padding: 3rem 5rem;
-
+	span {
+		display: inline-block;
+		font-size: clamp(1.8rem, 40%, 7rem);
+		margin-bottom: .6rem;
+	}
 	input {
 		height: 4rem;
 		width: 100%;
@@ -59,8 +64,13 @@ export const ContactForm = styled.div`
 		border-radius: 4px;
 		padding: 0.5rem 1rem;
 		font-size: 1.5rem;
+		&::placeholder {
+			font-size: clamp(1.4rem, 40%, 7rem);
+			font-weight: 300;
+		}
 	}
 	textarea {
+		border: none;
 		border-radius: 4px;
 		font-size: 1.6rem;
 		padding: 0.5rem 1rem;
@@ -68,7 +78,8 @@ export const ContactForm = styled.div`
 		width: 100%;
 
 		&::placeholder {
-			font-size: clamp(1.6rem, 40%, 7rem);
+			font-size: clamp(1.5rem, 40%, 7rem);
+			font-weight: 300;
 		}
 	}
 `;

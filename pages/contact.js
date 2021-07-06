@@ -68,11 +68,13 @@ export default function Contact() {
 					<form action="https://formsubmit.co/3bc402a874576ccd1df4877537be69be" method="POST">
 						<div>
 							<label>
+								<span>Full Name</span>
 								<input name="full name" type="text" placeholder="Full Name" required />
 							</label>
 						</div>
 						<div>
 							<label>
+								<span>Email Address</span>
 								<input type="hidden" name="_subject" value="Portfolio Email 😎!" />
 
 								<input name="email" type="email" placeholder="Email Address" required />
@@ -80,10 +82,11 @@ export default function Contact() {
 						</div>
 						<div>
 							<label>
+								<span>Message</span>
 								<textarea name="mesaage" cols="29" rows="6" placeholder="Message" required />
 							</label>
 						</div>
-						<input type="hidden" name="_next" value="http://localhost:3000/thankyou" />
+						<input type="hidden" name="_next" value="https://jane.vercel.app/thankyou" />
 						<Button type="submit">Send Message</Button>
 					</form>
 				</ContactForm>

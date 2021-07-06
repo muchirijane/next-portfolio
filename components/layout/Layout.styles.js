@@ -38,6 +38,7 @@ body{
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     line-height: 1.6;
+    letter-spacing: 1.3;
     font-size: 1.6rem; 
     height: 100vh;
 }
@@ -128,7 +129,7 @@ background: none;
   color: var(--colour-white);
   border: none;
   
-  transition: all .3s ease-in ;
+  transition: all .2s cubic-bezier(.84,.17,.06,1.24) ;
 
   span{
     color: var(--colour-white);

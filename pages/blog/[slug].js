@@ -5,6 +5,7 @@ import { createClient } from 'contentful';
 import Head from 'next/head';
 import Image from 'next/image';
 
+import Skeleton from '../../components/UI/Skeleton/Skeleton';
 import Layout from '../../components/layout/Layout';
 import { PostContainer, PostTags } from '../../styles/Post.styles';
 
@@ -25,27 +26,31 @@ export const getStaticPaths = async () => {
 
 	return {
 		paths,
-		fallback: false
+		fallback: true
 	};
 };
 
 export async function getStaticProps({ params }) {
-	const { items } = await client.getEntries({
+	const res = await client.getEntries({
 		content_type: 'portfolio',
 		'fields.slug': params.slug
 	});
 
 	return {
-		props: { blog: items[0] },
+		props: {
+			blog: res.items[0]
+		},
 		revalidate: 2
 	};
 }
 
-export default function BlogContent({ blog }) {
+export default function BlogContent({ blog, index }) {
 	console.log(blog);
 
+	if (!blog) return <Skeleton />;
+
 	const { featuredImage, title, tags, blogPost } = blog.fields;
-	const tagList = tags.map((tag) => <span key={title}>#{tag}</span>);
+	const tagList = tags.map((tag) => <span key={index}>#{tag}</span>);
 
 	return (
 		<Layout>

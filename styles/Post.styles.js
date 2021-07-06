@@ -46,7 +46,7 @@ export const PostContainer = styled.section`
 
 	pre {
 		background-color: ${({ theme }) => theme.codeBg};
-		box-shadow: ${({ theme }) => theme.mediumShadow};
+		box-shadow: var(--medium-shadow);
 		padding: 16px;
 		border-radius: 4px;
 		overflow: auto;
@@ -55,7 +55,21 @@ export const PostContainer = styled.section`
 		margin-top: 3rem;
 		padding: 3rem 0 1.8rem .4rem;
 		border-radius: 12px;
-		overflow: hidden;
+		overflow-x: auto;
+
+		&::-webkit-scrollbar:horizontal {
+			height: 1rem;
+		}
+
+		::-webkit-scrollbar-thumb:horizontal {
+			background-color: green;
+			border-radius: 4px;
+		}
+	}
+
+	&::-webkit-scrollbar-thumb:horizontal {
+		background-color: green;
+		border-radius: 4px;
 	}
 `;
 
