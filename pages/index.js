@@ -21,7 +21,6 @@ export default function Index() {
 
 			<HomeContainer id="home">
 				<HomeContent>
-					<Image className="rotate-img" src={profile} alt="3d design of a happy girl" />
 					<HomeText>
 						<h3>
 							Hello there,{' '}
@@ -57,6 +56,13 @@ export default function Index() {
 							</PageLink>
 						</Link>
 					</HomeText>
+					<Image
+						className="rotate-img"
+						src={profile}
+						height={500}
+						width={600}
+						alt="3d design of a happy girl"
+					/>
 				</HomeContent>
 				<AboutContainer>
 					<h2>About Me</h2>

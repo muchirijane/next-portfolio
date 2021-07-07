@@ -41,6 +41,16 @@ export const darkTheme = {
 	smallShadow: '0px 5px 20px rgba(0, 0, 0, 0.1)'
 };
 
+export const device = {
+	mobileS: `(max-width: '320px')`,
+	mobileM: `(max-width: '375px')`,
+	mobileL: `(max-width: '425px')`,
+	tablet: `(max-width: '768px')`,
+	laptop: `(max-width: '1024px')`,
+	laptopL: `(max-width: '1440px')`,
+	desktop: `(min-width: '2560px')`
+};
+
 export const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.body};

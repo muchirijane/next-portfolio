@@ -25,6 +25,7 @@ export default function TechStack() {
 	return (
 		<TechContainer>
 			<h2>My Tech stack and tools</h2>
+
 			<TechContent>
 				<TechIconItem>
 					<TechIconImage>

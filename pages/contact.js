@@ -6,7 +6,7 @@ import Button from '../components/UI/Button/Button';
 import { ContactContainer, ContactContent, DevLink, ContactSocials, ContactForm } from '../styles/Contact.styles';
 export default function Contact() {
 	return (
-		<ContactContainer>
+		<ContactContainer id="contact">
 			<h2>Let's Connect</h2>
 			<ContactContent>
 				{data.map((data) => (

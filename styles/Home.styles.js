@@ -1,13 +1,24 @@
 import styled from 'styled-components';
-
+import { device } from '../components/Theme/Theme';
 export const HomeContainer = styled.section`
 	margin: 10rem auto;
-	width: 80%;
+	width: 90%;
 `;
 export const HomeContent = styled.div`
-	margin-top: 12rem;
-	display: flex;
-	flex-direction: row-reverse;
+	height: 60vh;
+	width: 100%;
+	margin-top: 8rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+	grid-column-gap: 10rem;
+	grid-row-gap: 4rem;
+
+	/* @media ${device.desktop} {
+		grid-template-columns: repeat(auto-fill, minmax(60rem, 1fr));
+	} */
+@media only screen and (max-width: 2560px){
+grid-template-columns: repeat(auto-fill, minmax(60rem, 1fr));
+}
 
 	h3 {
 		font-size: clamp(2rem, 70%, 6rem);

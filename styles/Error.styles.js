@@ -1,19 +1,24 @@
 import styled from 'styled-components';
 
 export const ErrorContainer = styled.section`
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: 8rem;
 	img {
-		width: 70%;
 		margin-top: 2rem;
-		margin-left: -14rem;
-		margin-right: 0;
+	}
+
+	@media (max-width: 768px) {
+		flex-direction: column;
 	}
 `;
 
-export const ErrorContent = styled.div`width: 100%;`;
+export const ErrorContent = styled.div`
+	width: 80%;
+	margin-left: 6rem;
+`;
 export const ErrorText = styled.div`
 	margin: 3rem 0;
 	h1 {

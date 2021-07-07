@@ -16,7 +16,7 @@ export default function ErrorPage() {
 	return (
 		<Layout>
 			<ErrorContainer className="error-container">
-				<Image src={errorImg} alt="a 3d design for error illustartion" />
+				<Image src={errorImg} height={800} width={900} alt="a 3d design for error illustartion" />
 				<ErrorContent className="error-content">
 					<ErrorText>
 						<h1> UGH! Looks like you are lost</h1>
