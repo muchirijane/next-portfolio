@@ -10,14 +10,14 @@ export const HomeContent = styled.div`
 	margin-top: 8rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
-	grid-column-gap: 10rem;
+	grid-column-gap: 3rem;
 	grid-row-gap: 4rem;
 
 	/* @media ${device.desktop} {
 		grid-template-columns: repeat(auto-fill, minmax(60rem, 1fr));
 	} */
-@media only screen and (max-width: 2560px){
-grid-template-columns: repeat(auto-fill, minmax(60rem, 1fr));
+@media  ${device.desktop}{
+grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
 }
 
 	h3 {

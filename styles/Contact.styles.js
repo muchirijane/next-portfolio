@@ -21,7 +21,7 @@ export const DevLink = styled.a`margin-left: .6rem;`;
 export const ContactContent = styled.div`
 	margin-top: 3rem;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 	grid-column-gap: 12rem;
 	grid-row-gap: 3rem;
 `;

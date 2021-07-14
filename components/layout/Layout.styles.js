@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-
+import { device } from '../Theme/Theme';
 const GlobalStyles = createGlobalStyle`
 
 *,
@@ -161,4 +161,7 @@ export const Container = styled.main`
 	height: 100vh;
 	z-index: 1000;
 	margin: 0 15rem;
+
+	@media ${device.laptopL} {
+	}
 `;

@@ -42,13 +42,13 @@ export const darkTheme = {
 };
 
 export const device = {
-	mobileS: `(max-width: '320px')`,
-	mobileM: `(max-width: '375px')`,
-	mobileL: `(max-width: '425px')`,
-	tablet: `(max-width: '768px')`,
-	laptop: `(max-width: '1024px')`,
-	laptopL: `(max-width: '1440px')`,
-	desktop: `(min-width: '2560px')`
+	mobileS: `only screen and (max-width: 20em)`,
+	mobileM: `only screen and (max-width: 23.44em)`,
+	mobileL: `only screen and (max-width: 26.56em)`,
+	tablet: `only screen and (max-width: 48em)`, //768px
+	laptop: `only screen and (max-width: 64em)`, //1024px
+	laptopL: `only screen and (max-width: 90em)`, //1400px
+	desktop: `only screen and (min-width: 112.5em)` //1800px
 };
 
 export const GlobalStyles = createGlobalStyle`
