@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { device } from '../components/Theme/Theme';
 export const AboutSection = styled.section`
 	margin: 10rem auto;
 	width: 80%;
@@ -7,6 +7,12 @@ export const AboutSection = styled.section`
 	h1 {
 		font-size: clamp(4rem, 50%, 10rem);
 		font-family: 'Montserrat', sans-serif;
+	}
+	@media ${device.laptopS} {
+		margin: 6rem auto;
+	}
+	@media ${device.tablet} {
+		width: 96%;
 	}
 `;
 export const AboutContent = styled.div`

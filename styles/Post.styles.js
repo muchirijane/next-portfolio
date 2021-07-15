@@ -1,11 +1,15 @@
 import styled from 'styled-components';
-
+import { device } from '../components/Theme/Theme';
 export const PostContainer = styled.section`
 	width: 65rem;
 	margin: 3rem auto;
 	margin-bottom: 15rem;
 	line-height: 1.8;
 	letter-spacing: 1.2px;
+
+	@media ${device.tablet} {
+		width: 50rem;
+	}
 
 	h1,
 	h2,
@@ -25,6 +29,9 @@ export const PostContainer = styled.section`
 
 	img {
 		width: 65rem;
+		@media ${device.tablet} {
+			width: 50rem;
+		}
 	}
 	a {
 		display: inline-block;

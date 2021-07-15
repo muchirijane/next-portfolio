@@ -4,7 +4,7 @@ export const Header = styled.header`
 	position: fixed;
 	left: 0;
 	height: 100vh;
-	z-index: 2000;
+	z-index: 4000;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -13,6 +13,16 @@ export const Header = styled.header`
 	ul {
 		display: flex;
 		flex-direction: column-reverse;
+	}
+	@media ${device.tablet} {
+		height: 9rem;
+		width: 100vw;
+		bottom: 0;
+		flex-direction: row;
+
+		ul {
+			flex-direction: row;
+		}
 	}
 `;
 
@@ -23,6 +33,10 @@ export const NavItems = styled.li`
 	@media ${device.laptopL} {
 		padding: 2rem 1rem;
 	}
+	@media ${device.tablet} {
+		padding: 2rem;
+	}
+
 	a {
 		font-family: 'Roboto', sans-serif;
 		font-size: clamp(1.6rem, 50%, 10rem);
@@ -38,6 +52,9 @@ export const NavItems = styled.li`
 		}
 		@media ${device.laptopL} {
 			font-size: clamp(1.5rem, 50%, 10rem);
+		}
+		@media ${device.tablet} {
+			writing-mode: initial;
 		}
 	}
 `;

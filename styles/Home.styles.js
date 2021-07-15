@@ -10,12 +10,8 @@ export const HomeContent = styled.div`
 	margin-top: 8rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
-	grid-column-gap: 3rem;
+	grid-column-gap: 13rem;
 	grid-row-gap: 4rem;
-
-	@media ${device.desktop} {
-		grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
-	}
 
 	h3 {
 		font-size: clamp(2rem, 70%, 6rem);
@@ -37,6 +33,10 @@ export const HomeContent = styled.div`
 		@media ${device.laptopM} {
 			font-size: clamp(1.8rem, 80%, 9rem);
 		}
+	}
+
+	@media ${device.tablet} {
+		margin-top: 0rem;
 	}
 `;
 export const HomeText = styled.div`margin-top: 3rem;`;
@@ -67,9 +67,10 @@ export const AboutContainer = styled.section`
 
 	p {
 		font-size: clamp(2rem, 80%, 9rem);
-
-		/* width: 77%;
-		letter-spacing: 2px; */
+	}
+	@media ${device.laptopS} {
+		margin: 6rem auto;
+		width: 100%;
 	}
 `;
 export const AboutLink = styled.a`
@@ -78,4 +79,12 @@ export const AboutLink = styled.a`
 	padding: 1rem 3rem;
 	margin-top: 4rem;
 	text-align: center;
+`;
+
+export const ImgWrapper = styled.div`
+	width: 50rem;
+	@media ${device.laptopS} {
+		z-index: -1;
+		opacity: 0.06;
+	}
 `;

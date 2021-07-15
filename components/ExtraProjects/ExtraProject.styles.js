@@ -18,6 +18,7 @@ export const ProjectContainer = styled.div`
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	grid-column-gap: 4rem;
+	grid-row-gap: 5rem;
 `;
 
 export const ProjectContent = styled.div`

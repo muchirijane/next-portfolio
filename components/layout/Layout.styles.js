@@ -46,6 +46,11 @@ h1, h2, h3, h4, h5{
 .home-image {
 	height: 500px;
   width: 600px;
+  @media ${device.laptopS} {
+		img {
+			display: none;
+		}
+	}
 }
 
 button{
@@ -155,5 +160,8 @@ export const Container = styled.main`
 	@media ${device.laptopL} {
 		margin: 0 10rem;
 		margin-right: 0;
+	}
+	@media ${device.tablet} {
+		margin: 0 2rem;
 	}
 `;

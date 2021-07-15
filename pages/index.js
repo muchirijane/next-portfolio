@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Typewriter from 'react-simple-typewriter';
 
-import { HomeContent, Span, HomeContainer, PageLink, AboutLink, AboutContainer, HomeText } from '../styles/Home.styles';
+import { HomeContent, Span, HomeContainer, PageLink, AboutLink, AboutContainer, HomeText, ImgWrapper } from '../styles/Home.styles';
 import { AboutContent } from '../styles/About.styles';
 import data from '../data/About.json';
 import profile from '../public/girl.svg';
@@ -56,7 +56,9 @@ export default function Index() {
 							</PageLink>
 						</Link>
 					</HomeText>
-					<Image className="home-image" src={profile} alt="3d design of a happy girl" />
+					<ImgWrapper>
+					<Image src={profile} alt='a 3d design of a girl'/>
+					</ImgWrapper>
 				</HomeContent>
 				<AboutContainer>
 					<h2>About Me</h2>
