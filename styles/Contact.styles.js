@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.section`
-	margin: 10rem 0;
+	margin: 8rem 0;
 	width: 88%;
 
 	h2 {

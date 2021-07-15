@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { device } from '../Theme/Theme';
 export const Header = styled.header`
 	position: fixed;
 	left: 0;
@@ -19,6 +19,10 @@ export const Header = styled.header`
 export const NavItems = styled.li`
 	list-style: none;
 	padding: 3rem 2rem;
+
+	@media ${device.laptopL} {
+		padding: 2rem 1rem;
+	}
 	a {
 		font-family: 'Roboto', sans-serif;
 		font-size: clamp(1.6rem, 50%, 10rem);
@@ -29,8 +33,11 @@ export const NavItems = styled.li`
 		transform: rotate(180deg);
 
 		&:hover {
-			color: #ff85ad;
+			color: ${({ theme }) => theme.linkColor};
 			transition: all .2s ease;
+		}
+		@media ${device.laptopL} {
+			font-size: clamp(1.5rem, 50%, 10rem);
 		}
 	}
 `;

@@ -49,20 +49,14 @@ export default function Index() {
 							friendly and easy to navigate. User Expericence is important in what I create.{' '}
 						</p>
 
-						<Link href="/contact">
+						<Link href="/#contact">
 							<PageLink className="link">
 								Hire Me
 								<span>&rarr;</span>
 							</PageLink>
 						</Link>
 					</HomeText>
-					<Image
-						className="rotate-img"
-						src={profile}
-						height={500}
-						width={600}
-						alt="3d design of a happy girl"
-					/>
+					<Image className="home-image" src={profile} alt="3d design of a happy girl" />
 				</HomeContent>
 				<AboutContainer>
 					<h2>About Me</h2>

@@ -13,12 +13,9 @@ export const HomeContent = styled.div`
 	grid-column-gap: 3rem;
 	grid-row-gap: 4rem;
 
-	/* @media ${device.desktop} {
-		grid-template-columns: repeat(auto-fill, minmax(60rem, 1fr));
-	} */
-@media  ${device.desktop}{
-grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
-}
+	@media ${device.desktop} {
+		grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+	}
 
 	h3 {
 		font-size: clamp(2rem, 70%, 6rem);
@@ -29,16 +26,21 @@ grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
 	}
 	h1 {
 		font-size: clamp(4rem, 90%, 9rem);
-		/* font-family: 'Nunito', sans-serif; */
 		font-weight: 300;
+		@media ${device.laptopM} {
+			font-size: clamp(3rem, 80%, 9rem);
+		}
 	}
 	p {
 		font-size: clamp(2rem, 80%, 9rem);
-		letter-spacing: 2px;
+		letter-spacing: 1.6px;
+		@media ${device.laptopM} {
+			font-size: clamp(1.8rem, 80%, 9rem);
+		}
 	}
 `;
 export const HomeText = styled.div`margin-top: 3rem;`;
-export const Span = styled.span`color: #ff85ad;`;
+export const Span = styled.span`color: ${({ theme }) => theme.linkColor};`;
 
 export const PageLink = styled.a`
 	font-family: 'Roboto', sans-serif;

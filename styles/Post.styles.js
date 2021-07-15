@@ -28,7 +28,7 @@ export const PostContainer = styled.section`
 	}
 	a {
 		display: inline-block;
-		color: var(--dark-pink);
+		color: ${({ theme }) => theme.linkColor};
 		text-decoration: underline;
 
 		&:hover {
@@ -76,7 +76,8 @@ export const PostContainer = styled.section`
 export const PostTags = styled.div`
 	margin-bottom: 8rem;
 	span {
-		background-color: var(--light-brown);
+		background-color: ${({ theme }) => theme.linkColor};
+		color: var(--colour-white);
 		padding: .5rem;
 		border-radius: .4rem;
 		&:not(:last-child) {

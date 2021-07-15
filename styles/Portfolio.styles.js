@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { device } from '../components/Theme/Theme';
 export const PortfolioContainer = styled.section`
 	width: 90%;
 	margin-top: 10rem;
@@ -10,17 +10,26 @@ export const PortfolioContainer = styled.section`
 		font-size: clamp(4rem, 50%, 10rem);
 		margin-bottom: 3rem;
 	}
+	button {
+		margin-top: 6rem;
+	}
 `;
 export const FeaturedPortfolios = styled.div`
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
 	grid-gap: 5rem;
+	@media ${device.laptopL} {
+		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+	}
 `;
 export const PortfolioContent = styled.div`
 	width: 46rem;
 	min-height: 58rem;
 	position: relative;
 	box-shadow: ${({ theme }) => theme.bigShadow};
+	@media ${device.laptopL} {
+		width: 40rem;
+	}
 `;
 export const PortfolioImage = styled.div`
 	background: rgba(0, 0, 0, 0.3);

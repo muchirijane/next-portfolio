@@ -18,7 +18,7 @@ export const AboutContent = styled.div`
 	a {
 		cursor: pointer;
 		text-decoration: none;
-		color: var(--dark-pink);
+		color: ${({ theme }) => theme.linkColor};
 
 		&:hover {
 			text-decoration: underline;

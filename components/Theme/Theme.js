@@ -5,6 +5,8 @@ export const lightTheme = {
 	text: '#444',
 	toggleBorder: '#FFF',
 	background: '#363537',
+	linkColor: `#BA135D`,
+
 	filterBg: 'none',
 	scollarBg: '#C4C4C4',
 	scollarBgHover: '#BDBCBC',
@@ -26,6 +28,7 @@ export const darkTheme = {
 	text: '#FAFAFA',
 	toggleBorder: '#6B8096',
 	background: '#999',
+	linkColor: `#E861A4`,
 	filterBg: 'brightness(0.109)',
 	scollarBg: '#333',
 	scollarBgHover: '#444',
@@ -42,11 +45,12 @@ export const darkTheme = {
 };
 
 export const device = {
-	mobileS: `only screen and (max-width: 20em)`,
-	mobileM: `only screen and (max-width: 23.44em)`,
-	mobileL: `only screen and (max-width: 26.56em)`,
+	mobileS: `only screen and (max-width: 20em)`, //320px
+	mobileM: `only screen and (max-width: 23.44em)`, //375px
+	mobileL: `only screen and (max-width: 26.56em)`, //425px
 	tablet: `only screen and (max-width: 48em)`, //768px
-	laptop: `only screen and (max-width: 64em)`, //1024px
+	laptopS: `only screen and (max-width: 64em)`, //1024px
+	laptopM: `only screen and (max-width: 75em)`, //1200px
 	laptopL: `only screen and (max-width: 90em)`, //1400px
 	desktop: `only screen and (min-width: 112.5em)` //1800px
 };

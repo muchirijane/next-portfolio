@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
 }
 :root{
-  --color-white: #fff;
+  --colour-white: #fff;
   --dark-pink: #E861A4;
   --light-pink: #FF6F8D;
   --light-brown: #C68900;
@@ -22,16 +22,7 @@ const GlobalStyles = createGlobalStyle`
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    // @media only screen and (max-width: 1200px){
-    //     font-size: 58%;
-    // }
-    // @media only screen and (max-width: 1100px){
-    //     font-size: 55%;
-    // }
-     
-    // @media only screen and (min-width: 2000px){
-    //     font-size: 100%;
-    // }
+    
 }
 
 body{
@@ -52,11 +43,9 @@ h1, h2, h3, h4, h5{
   font-family: 'Montserrat', sans-serif;
 }
 
-.backgroundImage {
-	height: auto;
-  width: 100%;
-	z-index: -1;
-	filter: ${({ theme }) => theme.filterBg}
+.home-image {
+	height: 500px;
+  width: 600px;
 }
 
 button{
@@ -71,18 +60,18 @@ button{
 .link-animated{
   
 		display: inline-block;
-		color: var(--dark-pink);
+		color: ${({ theme }) => theme.linkColor};
 		text-decoration: none;
 
 		&:hover {
-			transition: all .3s cubic-bezier(.88, .17, .05, 1);
+			transition: all .3s cubic-bezier(.88, .17, .05, 1) ;
 			color: var(--light-pink);
 			text-decoration: none;
 			transform: translateY(-2px);
 		}
 
 		&:active {
-			transition: all .3s cubic-bezier(.88, .17, .05, 1);
+			transition: all .3s cubic-bezier(.88, .17, .05, 1) ;
 			transform: translateY(3px);
 		}
 	
@@ -98,7 +87,7 @@ color: ${({ theme }) => theme.primary};
 
 &:hover{
 
-  background: var(--dark-pink);
+  background: ${({ theme }) => theme.linkColor};
   color: var(--colour-white);
   transform: translateY(-2px);
   transition: all .3s cubic-bezier(.88, .17, .05, 1);
@@ -125,7 +114,7 @@ background: none;
 
 
 &:hover{
-  background: var(--dark-pink);
+  background: ${({ theme }) => theme.linkColor};
   color: var(--colour-white);
   border: none;
   
@@ -142,10 +131,11 @@ footer{
   text-align: center;
   letter-spacing: 2px;
   z-index: 2000;
-  font-size: clamp(1.4rem, 40%, 6rem);
-  font-weight: 300;
+  font-size: clamp(1.5rem, 40%, 6rem);
+  
+  
   a{
-    color: var(--light-pink);
+    color: ${({ theme }) => theme.linkColor};
     text-decoration: none;
   }
 }
@@ -163,5 +153,7 @@ export const Container = styled.main`
 	margin: 0 15rem;
 
 	@media ${device.laptopL} {
+		margin: 0 10rem;
+		margin-right: 0;
 	}
 `;
