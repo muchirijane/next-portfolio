@@ -10,13 +10,31 @@ export const Header = styled.header`
 	justify-content: space-around;
 	align-items: center;
 	box-shadow: ${({ theme }) => theme.navbarShadow};
+
+	@media ${device.tabletS} {
+		display: block;
+	}
+
+	nav {
+		@media ${device.tabletS} {
+			position: absolute;
+			top: -60px;
+			width: 100%;
+			background-color: ${({ theme }) => theme.primary};
+			opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')}
+		}
+	}
+
 	ul {
 		display: flex;
 		flex-direction: column-reverse;
+		/* @media ${device.tabletS} {
+			display: none;
+		} */
 	}
 	@media ${device.tablet} {
 		height: 9rem;
-		width: 100vw;
+		width: 100%;
 		bottom: 0;
 		flex-direction: row;
 
@@ -56,5 +74,53 @@ export const NavItems = styled.li`
 		@media ${device.tablet} {
 			writing-mode: initial;
 		}
+	}
+`;
+export const MenuWrapper = styled.div`
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+`;
+export const MenuButton = styled.button`
+	height: 8rem;
+	width: 8rem;
+	cursor: pointer;
+	background: transparent;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: none;
+
+	@media ${device.tabletS} {
+		display: flex;
+	}
+`;
+
+export const MenuBugger = styled.div`
+	background: ${({ theme }) => theme.secondaryColor};
+	height: .5rem;
+	width: 5rem;
+	border-radius: .5rem;
+	position: relative;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		background: ${({ theme }) => theme.secondaryColor};
+		height: .5rem;
+		width: 5rem;
+		border-radius: .5rem;
+		left: 0;
+	}
+	&::before {
+		transform: translateY(-1.5rem);
+	}
+	&::after {
+		transform: translateY(1.5rem);
 	}
 `;

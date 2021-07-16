@@ -48,6 +48,7 @@ export const device = {
 	mobileS: `only screen and (max-width: 20em)`, //320px
 	mobileM: `only screen and (max-width: 23.44em)`, //375px
 	mobileL: `only screen and (max-width: 26.56em)`, //425px
+	tabletS: `only screen and (max-width: 37em)`, //600px
 	tablet: `only screen and (max-width: 48em)`, //768px
 	laptopS: `only screen and (max-width: 64em)`, //1024px
 	laptopM: `only screen and (max-width: 75em)`, //1200px
