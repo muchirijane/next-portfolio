@@ -12,11 +12,11 @@ import { Container, Content, BlogLink, PageLink } from '../styles/Thankyou.style
 export default function thankyou() {
 	const { width, height } = useWindowSize();
 	const router = useRouter();
-	useEffect(() => {
-		setTimeout(() => {
-			router.push('/');
-		}, 8000);
-	}, []);
+	// useEffect(() => {
+	// 	setTimeout(() => {
+	// 		router.push('/');
+	// 	}, 8000);
+	// }, []);
 	return (
 		<Layout>
 			<Container>

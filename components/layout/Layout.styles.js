@@ -130,6 +130,13 @@ background: none;
     margin-left: 1.4rem;
   }
 }
+
+ .menuOpen{
+   display: block;
+ }
+ .menuClosed{
+   display: none;
+ }
 }
 
 footer{
@@ -163,5 +170,11 @@ export const Container = styled.main`
 	}
 	@media ${device.tablet} {
 		margin: 0 2rem;
+	}
+	@media ${device.mobileL} {
+		margin: 0 1rem;
+	}
+	@media ${device.mobileM} {
+		margin: 0 1.4rem;
 	}
 `;

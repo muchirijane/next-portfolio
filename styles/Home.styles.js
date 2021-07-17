@@ -3,6 +3,9 @@ import { device } from '../components/Theme/Theme';
 export const HomeContainer = styled.section`
 	margin: 10rem auto;
 	width: 90%;
+	@media ${device.tabletS} {
+		margin: 3rem auto;
+	}
 `;
 export const HomeContent = styled.div`
 	height: 60vh;
@@ -19,6 +22,9 @@ export const HomeContent = styled.div`
 	}
 	h2 {
 		font-size: clamp(4rem, 90%, 9rem);
+		@media ${device.mobileL} {
+			font-size: clamp(3rem, 90%, 9rem);
+		}
 	}
 	h1 {
 		font-size: clamp(4rem, 90%, 9rem);
@@ -26,11 +32,14 @@ export const HomeContent = styled.div`
 		@media ${device.laptopM} {
 			font-size: clamp(3rem, 80%, 9rem);
 		}
+		@media ${device.mobileM} {
+			font-size: clamp(2.4rem, 80%, 9rem);
+		}
 	}
 	p {
 		font-size: clamp(2rem, 80%, 9rem);
 		letter-spacing: 1.6px;
-		@media ${device.laptopM} {
+		@media ${device.mobileL} {
 			font-size: clamp(1.8rem, 80%, 9rem);
 		}
 	}
@@ -39,7 +48,15 @@ export const HomeContent = styled.div`
 		margin-top: 0rem;
 	}
 `;
-export const HomeText = styled.div`margin-top: 3rem;`;
+export const HomeText = styled.div`
+	margin-top: 3rem;
+	@media ${device.mobileM} {
+		width: 80%;
+	}
+	@media ${device.mobileS} {
+		width: 70%;
+	}
+`;
 export const Span = styled.span`color: ${({ theme }) => theme.linkColor};`;
 
 export const PageLink = styled.a`
@@ -54,6 +71,10 @@ export const PageLink = styled.a`
 		font-size: inherit;
 		padding-left: .8rem;
 		color: ${({ theme }) => theme.primary};
+	}
+	@media ${device.mobileS} {
+		margin-top: 3rem;
+		padding: 1rem 4rem;
 	}
 `;
 
@@ -83,7 +104,7 @@ export const AboutLink = styled.a`
 
 export const ImgWrapper = styled.div`
 	width: 50rem;
-	@media ${device.laptopS} {
+	@media screen and (max-width: 1200px) {
 		z-index: -1;
 		opacity: 0.06;
 	}

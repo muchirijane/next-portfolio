@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { device } from '../components/Theme/Theme';
 export const ContactContainer = styled.section`
 	margin: 8rem 0;
 	width: 88%;
@@ -18,6 +18,14 @@ export const ContactContainer = styled.section`
 	}
 `;
 export const DevLink = styled.a`margin-left: .6rem;`;
+export const ContactText = styled.div`
+	@media ${device.mobileM} {
+		width: 90%;
+	}
+	@media ${device.mobileS} {
+		width: 74%;
+	}
+`;
 export const ContactContent = styled.div`
 	margin-top: 3rem;
 	display: grid;
@@ -81,5 +89,14 @@ export const ContactForm = styled.div`
 			font-size: clamp(1.5rem, 40%, 7rem);
 			font-weight: 300;
 		}
+	}
+
+	@media ${device.mobileM} {
+		width: 80%;
+		padding: 2rem 3rem;
+	}
+	@media ${device.mobileS} {
+		width: 74%;
+		padding: 1rem 2rem 3rem;
 	}
 `;

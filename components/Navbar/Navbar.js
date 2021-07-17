@@ -3,11 +3,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../../public/LOGO.svg';
 import { Header, NavItems, MenuWrapper, MenuButton, MenuBugger } from './Navbar.styles';
-function Navbar() {
+function Navbar({ menuOpen }) {
 	const [ isOpen, setIsOpen ] = useState(false);
 
 	const menuHandler = () => {
-		setIsOpen(true);
+		setIsOpen(!isOpen);
 	};
 	return (
 		<Header className="backgroundColour">
@@ -22,7 +22,7 @@ function Navbar() {
 				</MenuButton>
 			</MenuWrapper>
 
-			<nav isOpen={isOpen}>
+			<nav menuOpen={isOpen}>
 				<ul>
 					<NavItems onClick={menuHandler}>
 						<Link href="/">

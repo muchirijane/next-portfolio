@@ -10,6 +10,15 @@ export const PostContainer = styled.section`
 	@media ${device.tablet} {
 		width: 50rem;
 	}
+	@media ${device.mobileL} {
+		width: 35rem;
+	}
+	@media ${device.mobileM} {
+		width: 30rem;
+	}
+	@media ${device.mobileS} {
+		width: 25rem;
+	}
 
 	h1,
 	h2,
@@ -31,6 +40,15 @@ export const PostContainer = styled.section`
 		width: 65rem;
 		@media ${device.tablet} {
 			width: 50rem;
+		}
+		@media ${device.mobileL} {
+			width: 35rem;
+		}
+		@media ${device.mobileM} {
+			width: 30rem;
+		}
+		@media ${device.mobileS} {
+			width: 25rem;
 		}
 	}
 	a {
@@ -65,17 +83,17 @@ export const PostContainer = styled.section`
 		overflow-x: auto;
 
 		&::-webkit-scrollbar:horizontal {
-			height: 1rem;
+			height: 2rem;
 		}
 
 		::-webkit-scrollbar-thumb:horizontal {
-			background-color: green;
+			background-color: ${({ theme }) => theme.secondaryColor};
 			border-radius: 4px;
 		}
 	}
 
 	&::-webkit-scrollbar-thumb:horizontal {
-		background-color: green;
+		background-color: ${({ theme }) => theme.secondaryColor};
 		border-radius: 4px;
 	}
 `;

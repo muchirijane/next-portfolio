@@ -30,6 +30,15 @@ export const PortfolioContent = styled.div`
 	@media ${device.laptopL} {
 		width: 40rem;
 	}
+	@media ${device.mobileL} {
+		width: 35rem;
+	}
+	@media ${device.mobileM} {
+		width: 30rem;
+	}
+	@media ${device.mobileS} {
+		width: 26rem;
+	}
 `;
 export const PortfolioImage = styled.div`
 	background: rgba(0, 0, 0, 0.3);
@@ -45,6 +54,9 @@ export const PortfolioText = styled.div`
 	margin-top: -7rem;
 
 	padding: 7rem 3rem 2rem 3rem;
+	@media ${device.mobileS} {
+		padding: 12rem 2rem 2rem;
+	}
 
 	h3 {
 		font-size: clamp(2.2rem, 80%, 9rem);
@@ -82,5 +94,8 @@ export const PortfolioLink = styled.a`
 
 	&:not(:last-child) {
 		margin-right: 2rem;
+	}
+	@media ${device.mobileS} {
+		margin-bottom: 2rem;
 	}
 `;

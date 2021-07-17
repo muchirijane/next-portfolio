@@ -4,6 +4,8 @@ export const Container = styled.section`
 	margin: 4rem auto;
 	width: 60%;
 	text-align: center;
+	position: relative;
+	z-index: 2000;
 `;
 
 export const Content = styled.div`

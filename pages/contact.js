@@ -3,14 +3,21 @@ import { FiGithub, FiGlobe, FiLinkedin, FiTwitter } from 'react-icons/fi';
 
 import data from '../data/Contact.json';
 import Button from '../components/UI/Button/Button';
-import { ContactContainer, ContactContent, DevLink, ContactSocials, ContactForm } from '../styles/Contact.styles';
+import {
+	ContactContainer,
+	ContactText,
+	ContactContent,
+	DevLink,
+	ContactSocials,
+	ContactForm
+} from '../styles/Contact.styles';
 export default function Contact() {
 	return (
 		<ContactContainer id="contact">
 			<h2>Let's Connect</h2>
 			<ContactContent>
 				{data.map((data) => (
-					<div key={data.id}>
+					<ContactText key={data.id}>
 						<div>
 							<p>{data.text}</p>
 							<p>
@@ -62,7 +69,7 @@ export default function Contact() {
 								</span>
 							</ContactSocials>
 						</div>
-					</div>
+					</ContactText>
 				))}
 				<ContactForm>
 					<form action="https://formsubmit.co/3bc402a874576ccd1df4877537be69be" method="POST">

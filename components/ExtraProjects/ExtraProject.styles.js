@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { device } from '../Theme/Theme';
 export const ProjectWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -40,6 +40,10 @@ export const ProjectContent = styled.div`
 		font-weight: 300;
 		font-size: clamp(1.4rem, 60%, 6rem);
 		margin-top: 2rem;
+	}
+	@media ${device.mobileS} {
+		padding: 3rem 2rem;
+		width: 90%;
 	}
 `;
 

@@ -20,6 +20,9 @@ export const AboutContent = styled.div`
 	p {
 		font-size: clamp(2rem, 60%, 8rem);
 		padding-top: 2rem;
+		@media ${device.mobileL} {
+			font-size: clamp(1.8rem, 50%, 6rem);
+		}
 	}
 	a {
 		cursor: pointer;

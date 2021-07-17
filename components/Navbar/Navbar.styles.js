@@ -21,16 +21,16 @@ export const Header = styled.header`
 			top: -60px;
 			width: 100%;
 			background-color: ${({ theme }) => theme.primary};
-			opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')}
+			display: ${({ menuOpen }) => (menuOpen ? 'block' : 'none')};
 		}
 	}
 
 	ul {
 		display: flex;
 		flex-direction: column-reverse;
-		/* @media ${device.tabletS} {
-			display: none;
-		} */
+		@media ${device.tabletS} {
+			display: block;
+		}
 	}
 	@media ${device.tablet} {
 		height: 9rem;
