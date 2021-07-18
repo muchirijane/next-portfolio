@@ -21,6 +21,9 @@ export const FeaturedPortfolios = styled.div`
 	@media ${device.laptopL} {
 		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
 	}
+	@media ${device.laptopS} {
+		grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+	}
 `;
 export const PortfolioContent = styled.div`
 	width: 46rem;
@@ -30,9 +33,10 @@ export const PortfolioContent = styled.div`
 	@media ${device.laptopL} {
 		width: 40rem;
 	}
-	@media ${device.mobileL} {
+	@media ${device.laptopL} {
 		width: 35rem;
 	}
+
 	@media ${device.mobileM} {
 		width: 30rem;
 	}

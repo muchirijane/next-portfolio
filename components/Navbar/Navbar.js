@@ -3,11 +3,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../../public/LOGO.svg';
 import { Header, NavItems, MenuWrapper, MenuButton, MenuBugger } from './Navbar.styles';
-function Navbar({ menuOpen }) {
+import styled from 'styled-components';
+import { device } from '../Theme/Theme';
+
+const Nav = styled.nav`@media ${device.mobileL} {display: ${(props) => (props.isOpen ? 'block' : 'none')};}`;
+
+const Navbar = () => {
 	const [ isOpen, setIsOpen ] = useState(false);
 
 	const menuHandler = () => {
-		setIsOpen(!isOpen);
+		setIsOpen((prevIsOpen) => !prevIsOpen);
 	};
 	return (
 		<Header className="backgroundColour">
@@ -22,7 +27,7 @@ function Navbar({ menuOpen }) {
 				</MenuButton>
 			</MenuWrapper>
 
-			<nav menuOpen={isOpen}>
+			<Nav isOpen={isOpen}>
 				<ul>
 					<NavItems onClick={menuHandler}>
 						<Link href="/">
@@ -50,9 +55,9 @@ function Navbar({ menuOpen }) {
 						</Link>
 					</NavItems>
 				</ul>
-			</nav>
+			</Nav>
 		</Header>
 	);
-}
+};
 
 export default Navbar;

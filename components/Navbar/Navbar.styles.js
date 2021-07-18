@@ -21,16 +21,15 @@ export const Header = styled.header`
 			top: -60px;
 			width: 100%;
 			background-color: ${({ theme }) => theme.primary};
-			display: ${({ menuOpen }) => (menuOpen ? 'block' : 'none')};
+		}
+		@media ${device.mobileL} {
+			top: -90px;
 		}
 	}
 
 	ul {
 		display: flex;
 		flex-direction: column-reverse;
-		@media ${device.tabletS} {
-			display: block;
-		}
 	}
 	@media ${device.tablet} {
 		height: 9rem;
@@ -40,6 +39,13 @@ export const Header = styled.header`
 
 		ul {
 			flex-direction: row;
+
+			@media ${device.mobileL} {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+				grid-gap: 1rem;
+				padding: 0 2rem;
+			}
 		}
 	}
 `;
@@ -53,6 +59,10 @@ export const NavItems = styled.li`
 	}
 	@media ${device.tablet} {
 		padding: 2rem;
+		margin-left: 0;
+	}
+	@media ${device.mobileL} {
+		padding: 1rem;
 	}
 
 	a {

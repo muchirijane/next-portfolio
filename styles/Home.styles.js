@@ -39,24 +39,22 @@ export const HomeContent = styled.div`
 	p {
 		font-size: clamp(2rem, 80%, 9rem);
 		letter-spacing: 1.6px;
-		@media ${device.mobileL} {
-			font-size: clamp(1.8rem, 80%, 9rem);
+		@media ${device.tabletS} {
+			margin: 2rem auto;
 		}
 	}
 
+	@media ${device.laptopM} {
+		grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+	}
+	@media ${device.laptopS} {
+		grid-template-columns: 1fr;
+	}
 	@media ${device.tablet} {
 		margin-top: 0rem;
 	}
 `;
-export const HomeText = styled.div`
-	margin-top: 3rem;
-	@media ${device.mobileM} {
-		width: 80%;
-	}
-	@media ${device.mobileS} {
-		width: 70%;
-	}
-`;
+export const HomeText = styled.div`margin-top: 3rem;`;
 export const Span = styled.span`color: ${({ theme }) => theme.linkColor};`;
 
 export const PageLink = styled.a`
@@ -71,6 +69,9 @@ export const PageLink = styled.a`
 		font-size: inherit;
 		padding-left: .8rem;
 		color: ${({ theme }) => theme.primary};
+	}
+	@media ${device.laptopS} {
+		margin-top: 4.4rem;
 	}
 	@media ${device.mobileS} {
 		margin-top: 3rem;
@@ -88,9 +89,14 @@ export const AboutContainer = styled.section`
 
 	p {
 		font-size: clamp(2rem, 80%, 9rem);
+		padding-top: .3rem;
 	}
 	@media ${device.laptopS} {
 		margin: 6rem auto;
+		width: 100%;
+	}
+	@media ${device.tabletS} {
+		margin: 12rem auto;
 		width: 100%;
 	}
 `;
@@ -103,8 +109,8 @@ export const AboutLink = styled.a`
 `;
 
 export const ImgWrapper = styled.div`
-	width: 50rem;
-	@media screen and (max-width: 1200px) {
+	width: 70%;
+	@media ${device.laptopS} {
 		z-index: -1;
 		opacity: 0.06;
 	}

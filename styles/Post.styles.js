@@ -11,10 +11,10 @@ export const PostContainer = styled.section`
 		width: 50rem;
 	}
 	@media ${device.mobileL} {
-		width: 35rem;
+		width: 37rem;
 	}
 	@media ${device.mobileM} {
-		width: 30rem;
+		width: 34rem;
 	}
 	@media ${device.mobileS} {
 		width: 25rem;
@@ -37,15 +37,16 @@ export const PostContainer = styled.section`
 	}
 
 	img {
+		border-radius: 5px;
 		width: 65rem;
 		@media ${device.tablet} {
 			width: 50rem;
 		}
 		@media ${device.mobileL} {
-			width: 35rem;
+			width: 37rem;
 		}
 		@media ${device.mobileM} {
-			width: 30rem;
+			width: 34rem;
 		}
 		@media ${device.mobileS} {
 			width: 25rem;
@@ -81,20 +82,23 @@ export const PostContainer = styled.section`
 		padding: 3rem 0 1.8rem .4rem;
 		border-radius: 12px;
 		overflow-x: auto;
+		white-space: pre;
 
 		&::-webkit-scrollbar:horizontal {
-			height: 2rem;
+			height: .4rem;
 		}
 
 		::-webkit-scrollbar-thumb:horizontal {
-			background-color: ${({ theme }) => theme.secondaryColor};
+			background-color: ${({ theme }) => theme.primary};
 			border-radius: 4px;
 		}
-	}
 
-	&::-webkit-scrollbar-thumb:horizontal {
-		background-color: ${({ theme }) => theme.secondaryColor};
-		border-radius: 4px;
+		code {
+			max-width: 80%;
+		}
+		li {
+			margin-left: 3rem;
+		}
 	}
 `;
 
