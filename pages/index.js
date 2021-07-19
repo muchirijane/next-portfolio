@@ -5,7 +5,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Typewriter from 'react-simple-typewriter';
 
-import { HomeContent, Span, HomeContainer, PageLink, AboutLink, AboutContainer, HomeText, ImgWrapper } from '../styles/Home.styles';
+import {
+	HomeContent,
+	Span,
+	HomeContainer,
+	PageLink,
+	AboutLink,
+	AboutContainer,
+	HomeText,
+	ImgWrapper
+} from '../styles/Home.styles';
 import { AboutContent } from '../styles/About.styles';
 import data from '../data/About.json';
 import profile from '../public/girl.svg';
@@ -57,7 +66,7 @@ export default function Index() {
 						</Link>
 					</HomeText>
 					<ImgWrapper>
-					<Image src={profile} alt='a 3d design of a girl'/>
+						<Image src={profile} alt="a 3d design of a girl" />
 					</ImgWrapper>
 				</HomeContent>
 				<AboutContainer>

@@ -110,6 +110,7 @@ export const AboutLink = styled.a`
 
 export const ImgWrapper = styled.div`
 	width: 70%;
+
 	@media ${device.laptopS} {
 		z-index: -1;
 		opacity: 0.06;

@@ -112,7 +112,7 @@ export const MenuButton = styled.button`
 
 export const MenuBugger = styled.div`
 	background: ${({ theme }) => theme.secondaryColor};
-	height: .5rem;
+	height: .4rem;
 	width: 5rem;
 	border-radius: .5rem;
 	position: relative;
@@ -122,15 +122,15 @@ export const MenuBugger = styled.div`
 		content: '';
 		position: absolute;
 		background: ${({ theme }) => theme.secondaryColor};
-		height: .5rem;
+		height: .4rem;
 		width: 5rem;
 		border-radius: .5rem;
 		left: 0;
 	}
 	&::before {
-		transform: translateY(-1.5rem);
+		transform: translateY(-1.4rem);
 	}
 	&::after {
-		transform: translateY(1.5rem);
+		transform: translateY(1.4rem);
 	}
 `;

@@ -6,15 +6,16 @@ export const PostContainer = styled.section`
 	margin-bottom: 15rem;
 	line-height: 1.8;
 	letter-spacing: 1.2px;
+	overflow-wrap: break-word;
 
 	@media ${device.tablet} {
 		width: 50rem;
 	}
 	@media ${device.mobileL} {
-		width: 37rem;
+		width: 36rem;
 	}
 	@media ${device.mobileM} {
-		width: 34rem;
+		width: 33rem;
 	}
 	@media ${device.mobileS} {
 		width: 25rem;
@@ -96,9 +97,9 @@ export const PostContainer = styled.section`
 		code {
 			max-width: 80%;
 		}
-		li {
-			margin-left: 3rem;
-		}
+	}
+	li {
+		margin-left: 3rem;
 	}
 `;
 
