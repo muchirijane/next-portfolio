@@ -5,7 +5,7 @@ export default function Meta() {
 			<meta name="author" content="Jane Muchiri" />
 			<meta
 				name="Keywords"
-				content="front end developer, web developer, developer, portfolio, javascript, react"
+				content="front end developer, self taught developer, web developer, Html and CSS, portfolio, javascript, react"
 			/>
 			<meta
 				name="description"
@@ -16,8 +16,10 @@ export default function Meta() {
 			<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
 			<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
 			<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-			<link rel="manifest" href="/favicon/site.webmanifest" />
+			<link rel="manifest" href="/manifest.json" />
 			<link rel="icon" href="/favicon.ico" />
+					<link rel="canonical" href="https://jane.vercel.app/" />
+
 		</Head>
 	);
 }

@@ -26,6 +26,8 @@ export default function Index() {
 		<Layout>
 			<Head>
 				<title>Jane's Front-end Developer</title>
+					<link rel="canonical" href="https://jane.vercel.app/" />
+
 			</Head>
 
 			<HomeContainer id="home">

@@ -106,12 +106,21 @@ export const PostContainer = styled.section`
 export const PostTags = styled.div`
 	margin-bottom: 8rem;
 	span {
-		background-color: ${({ theme }) => theme.linkColor};
+		background: linear-gradient(90deg, rgba(255, 118, 20, 1) 0%, rgba(255, 84, 17, 1) 100%);
 		color: var(--colour-white);
 		padding: .5rem;
 		border-radius: .4rem;
 		&:not(:last-child) {
 			margin-right: 2rem;
+		}
+		&:nth-child(4n + 1) {
+			background: linear-gradient(90deg, rgb(129, 110, 167) 0%, rgba(155, 0, 250, 1) 100%);
+		}
+		&:nth-child(4n + 2) {
+			background: linear-gradient(90deg, rgba(255, 12, 241, 1) 0%, rgba(250, 0, 135, 1) 100%);
+		}
+		&:nth-child(4n + 3) {
+			background: linear-gradient(90deg, rgba(20, 159, 255, 1) 0%, rgba(17, 122, 255, 1) 100%);
 		}
 	}
 `;
