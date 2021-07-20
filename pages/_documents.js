@@ -5,6 +5,7 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head>
+
 					<link rel="canonical" href="https://jane.vercel.app/" />
 					<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
 					<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
@@ -15,6 +16,8 @@ export default class MyDocument extends Document {
 						href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@300;400;800;900&display=swap"
 						rel="stylesheet"
 					/>
+					<meta name='format-detection' content='telephone=no' />
+          <meta name='mobile-web-app-capable' content='yes' />
 					<meta property="og:type" content="website" />
 					<meta property="og:title" content="Jane | Front-end developer" />
 					<meta
