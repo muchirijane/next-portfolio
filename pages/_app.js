@@ -40,7 +40,7 @@ export default function MyApp({ Component, pageProps }) {
 			<link rel="manifest" href="/manifest.json" />
 			<link rel="icon" href="/favicon.ico" />
 			<link rel="canonical" href="https://jane.vercel.app/" />
-			<title>Jane's Front-end Developer</title>
+			<title>Jane | Front-end Developer</title>
 					
 		</Head>
 		<ThemeProvider theme={theme}>
