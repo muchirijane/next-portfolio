@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import Layout from '../components/layout/Layout';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -24,12 +22,6 @@ import Contact from './contact';
 export default function Index() {
 	return (
 		<Layout>
-			<Head>
-				<title>Jane's Front-end Developer</title>
-					<link rel="canonical" href="https://jane.vercel.app/" />
-
-			</Head>
-
 			<HomeContainer id="home">
 				<HomeContent>
 					<HomeText>

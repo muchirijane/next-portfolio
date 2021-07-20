@@ -1,7 +1,7 @@
 // import Prism from "Prismjs";
 // import  "Prismjs";
 import {useEffect} from 'react'
-import Meta from './Meta';
+
 import Navbar from '../Navbar/Navbar'
 import Footer from './Footer';
 
@@ -18,7 +18,6 @@ export default function Layout({children}) {
     <GlobalStyles/>
     
 
-    <Meta/>
     <Navbar/>
     
     <Container>
