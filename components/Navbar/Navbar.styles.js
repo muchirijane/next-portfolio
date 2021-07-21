@@ -23,7 +23,10 @@ export const Header = styled.header`
 			background-color: ${({ theme }) => theme.primary};
 		}
 		@media ${device.mobileL} {
-			top: -90px;
+			top: -102px;
+		}
+		@media ${device.mobileS} {
+			top: -150px;
 		}
 	}
 
@@ -111,11 +114,12 @@ export const MenuButton = styled.button`
 `;
 
 export const MenuBugger = styled.div`
-	background: ${({ theme }) => theme.secondaryColor};
+	background: ${({ isOpen }) => (isOpen ? 'transparent' : '#fff')};
 	height: .4rem;
-	width: 5rem;
+	width: 4rem;
 	border-radius: .5rem;
 	position: relative;
+	transition: all .5s cubic-bezier(.97, 0, .11, 1);
 
 	&::before,
 	&::after {
@@ -123,14 +127,15 @@ export const MenuBugger = styled.div`
 		position: absolute;
 		background: ${({ theme }) => theme.secondaryColor};
 		height: .4rem;
-		width: 5rem;
+		width: 4rem;
 		border-radius: .5rem;
 		left: 0;
+		transition: all .5s cubic-bezier(.97, 0, .11, 1);
 	}
 	&::before {
-		transform: translateY(-1.4rem);
+		transform: ${({ isOpen }) => (isOpen ? 'translate(5px, -5px) rotate(45deg)' : 'translateY(-1.4rem)')};
 	}
 	&::after {
-		transform: translateY(1.4rem);
+		transform: ${({ isOpen }) => (isOpen ? 'translate(5px, -3px) rotate(-45deg)' : 'translateY(1.4rem)')};
 	}
 `;

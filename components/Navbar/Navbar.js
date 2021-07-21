@@ -23,7 +23,7 @@ const Navbar = () => {
 					</a>
 				</Link>
 				<MenuButton onClick={menuHandler} aria-label="menu">
-					<MenuBugger />
+					<MenuBugger isOpen={isOpen} />
 				</MenuButton>
 			</MenuWrapper>
 
