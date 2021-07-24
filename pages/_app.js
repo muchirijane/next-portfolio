@@ -11,10 +11,7 @@ export default function MyApp({ Component, pageProps }) {
 	const darkMode = useDarkMode(true);
 	const theme = darkMode.value ? darkTheme : lightTheme;
 
-	const lightModeHandler =()=>{
-		darkMode.disabled
-		console.log('I have been clicked!!')
-	}
+	
 
 	useEffect(() => {
 		setIsMounted(true);
@@ -24,7 +21,7 @@ export default function MyApp({ Component, pageProps }) {
 	
 		<ThemeProvider theme={theme}>
 			<GlobalStyles />
-			<button onClick={lightModeHandler}>Light Mode</button>
+			
 
 			{isMounted && <Component {...pageProps} />}
 		</ThemeProvider>
