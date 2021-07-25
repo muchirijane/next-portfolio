@@ -73,6 +73,7 @@ export const PostContainer = styled.section`
 
 	pre {
 		background-color: ${({ theme }) => theme.codeBg};
+
 		box-shadow: var(--medium-shadow);
 		padding: 16px;
 		border-radius: 4px;

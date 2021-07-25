@@ -23,7 +23,7 @@ export const Header = styled.header`
 			background-color: ${({ theme }) => theme.primary};
 		}
 		@media ${device.mobileL} {
-			top: -102px;
+			top: -100px;
 		}
 		@media ${device.mobileS} {
 			top: -150px;
@@ -119,7 +119,7 @@ export const MenuBugger = styled.div`
 	width: 4rem;
 	border-radius: .5rem;
 	position: relative;
-	transition: all .5s cubic-bezier(.97, 0, .11, 1);
+	transition: all .3s cubic-bezier(.97, 0, .11, 1);
 
 	&::before,
 	&::after {
@@ -130,7 +130,7 @@ export const MenuBugger = styled.div`
 		width: 4rem;
 		border-radius: .5rem;
 		left: 0;
-		transition: all .5s cubic-bezier(.97, 0, .11, 1);
+		transition: all .3s cubic-bezier(.97, 0, .11, 1);
 	}
 	&::before {
 		transform: ${({ isOpen }) => (isOpen ? 'translate(5px, -5px) rotate(45deg)' : 'translateY(-1.4rem)')};

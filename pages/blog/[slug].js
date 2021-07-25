@@ -23,9 +23,11 @@ export const getStaticPaths = async () => {
 			params: { slug: item.fields.slug }
 		};
 	});
+	console.log(paths);
 
 	return {
 		paths,
+
 		fallback: true
 	};
 };
@@ -36,6 +38,7 @@ export async function getStaticProps({ params }) {
 		'fields.slug': params.slug
 	});
 
+	console.log(res.items);
 	return {
 		props: {
 			blog: res.items[0]
@@ -44,13 +47,11 @@ export async function getStaticProps({ params }) {
 	};
 }
 
-export default function BlogContent({ blog, index }) {
-	console.log(blog);
-
+export default function BlogContent({ blog }) {
 	if (!blog) return <Skeleton />;
 
-	const { featuredImage, title, tags, blogPost } = blog.fields;
-	const tagList = tags.map((tag) => <span key={index}>#{tag}</span>);
+	const { featuredImage, title, tags, blogPost, slug } = blog.fields;
+	const tagList = tags.map((tag) => <span key={blog.sys.id}>#{tag}</span>);
 
 	return (
 		<Layout>
