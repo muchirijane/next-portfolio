@@ -11,13 +11,13 @@
 	},
 	{
 		"id": "portfolio2",
-		"image": "/portfolio/next-crypto-tracker.gif",
-		"alt": "Home made website",
-		"title": "HomeMade Website",
-		"preview": "https://muchirijane.github.io/Home-made-React/",
-		"source": "https://github.com/muchirijane/Home-made-React",
-		"stack": [ "React", "Gatsby", "styled-compoents", "Framer-Motion", " Graphql" ],
-		"content": "A food website for ordering food that you can cook at home by following recipe guidelines. The website is built with React and styled-components. This was a great practice to transform my Figma design into a React site."
+		"image": "/portfolio/budget-app.png",
+		"alt": "Budgetfy Financial App",
+		"title": "Budgetfy Financial App",
+		"preview": "https://next-budget-app.vercel.app/",
+		"source": "https://github.com/muchirijane/next-budget-app",
+		"stack": [ "Html", "CSS-modules", "Javascript", "React-JS" ],
+		"content": " Budgetfy App helps you to keep track of when you spend your expenses and see which month you spent the most. This project increased my understanding of using react hooks like state and reducer to handle the form values. Used scoped styles by applying CSS modules to ensure they are only applied to that specific file."
 	},
 	{
 		"id": "portfolio3",

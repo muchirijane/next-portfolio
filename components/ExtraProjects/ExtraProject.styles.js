@@ -19,6 +19,10 @@ export const ProjectContainer = styled.div`
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	grid-column-gap: 4rem;
 	grid-row-gap: 5rem;
+
+	@media ${device.desktop} {
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
 `;
 
 export const ProjectContent = styled.div`

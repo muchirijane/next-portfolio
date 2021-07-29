@@ -30,7 +30,7 @@ export default function Portfolio() {
 					{data.map((data) => (
 						<PortfolioContent key={data.id}>
 							<PortfolioImage>
-								<Image src={data.image} alt={data.alt} width={450} height={300} />
+								<Image src={data.image} alt={data.alt} width={630} height={450} />
 							</PortfolioImage>
 
 							<PortfolioText>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { device } from '../components/Theme/Theme';
 export const PortfolioContainer = styled.section`
-	width: 90%;
+	width: 98%;
 	margin-top: 10rem;
 	display: flex;
 	flex-direction: column;
@@ -30,6 +30,7 @@ export const PortfolioContent = styled.div`
 	min-height: 58rem;
 	position: relative;
 	box-shadow: ${({ theme }) => theme.bigShadow};
+
 	@media ${device.laptopL} {
 		width: 40rem;
 	}
@@ -43,11 +44,17 @@ export const PortfolioContent = styled.div`
 	@media ${device.mobileS} {
 		width: 26rem;
 	}
+	@media ${device.Mlaptop} {
+		width: 50rem;
+	}
+	@media ${device.desktop} {
+		width: 60rem;
+	}
 `;
 export const PortfolioImage = styled.div`
 	background: rgba(0, 0, 0, 0.3);
 	img {
-		background: var(--dark-pink);
+		background: var(--colour-white);
 	}
 `;
 export const PortfolioText = styled.div`
