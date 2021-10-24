@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import { device } from '../Theme/Theme';
+import styled, { createGlobalStyle } from "styled-components";
+import { device } from "../Theme/Theme";
 const GlobalStyles = createGlobalStyle`
 
 *,
@@ -157,24 +157,25 @@ footer{
 export default GlobalStyles;
 
 export const Container = styled.main`
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100vh;
-	z-index: 1000;
-	margin: 0 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  z-index: 1000;
+  margin: 0 20rem;
+  margin-right: 10rem;
 
-	@media ${device.laptopL} {
-		margin: 0 10rem;
-		margin-right: 0;
-	}
-	@media ${device.tablet} {
-		margin: 0 2rem;
-	}
-	@media ${device.mobileL} {
-		margin: 0 1rem;
-	}
-	@media ${device.mobileM} {
-		margin: 0 1.4rem;
-	}
+  @media ${device.laptopL} {
+    margin: 0 10rem;
+    margin-right: 0;
+  }
+  @media ${device.tablet} {
+    margin: 0 2rem;
+  }
+  @media ${device.mobileL} {
+    margin: 0 1rem;
+  }
+  @media ${device.mobileM} {
+    margin: 0 1.4rem;
+  }
 `;
