@@ -4,13 +4,23 @@
     "image": "/portfolio/finsweet-site.png",
     "alt": "FinSweet Restaurant website",
     "title": "FinSweet Restaurant",
-    "preview": "https://nextjs-finsweet-restaurant.vercel.app/",
-    "source": "https://github.com/muchirijane/nextjs-finsweet-restaurant",
+    "preview": "https://finsweet-restaurant.vercel.app/",
+    "source": "https://github.com/muchirijane/next-finsweet-restaurant",
     "stack": ["React", "Next Js", "Material UI", "Framer-Motion"],
     "content": "This is a restaurant website that showcase why others should enjoy their meals which is sourced from their farm and from the locals. By making meals that are organic they have increased their reach to other states and through the site others can order meals or book a reservation. Used Next Js and Material UI to create the front end side and framer motion for animations. "
   },
   {
     "id": "portfolio2",
+    "image": "/portfolio/airbnb.png",
+    "alt": "Budgetfy Financial App",
+    "title": "Airbnb Clone App",
+    "preview": "https://next-budget-app.vercel.app/",
+    "source": "https://github.com/muchirijane/airbnb-sanity-frontend",
+    "stack": ["Javascript", "React-JS", "Next Js", "Sanity"],
+    "content": " Airbnb frontend clone was created from scratch with data created from sanity io as a backend with different schemas. In the backend you can add details about the property like: location, description, multiple images, reviews and the hosts of each property. The frontend was built with Next to fetch data from sanity to render it to the client side. "
+  },
+  {
+    "id": "portfolio3",
     "image": "/portfolio/budget-app.png",
     "alt": "Budgetfy Financial App",
     "title": "Budgetfy Financial App",
@@ -18,16 +28,6 @@
     "source": "https://github.com/muchirijane/next-budget-app",
     "stack": ["Html", "CSS-modules", "Javascript", "React-JS"],
     "content": " Budgetfy App helps you to keep track of when you spend your expenses and see which month you spent the most. This project increased my understanding of using react hooks like state and reducer to handle the form values. Used scoped styles by applying CSS modules to ensure they are only applied to that specific file."
-  },
-  {
-    "id": "portfolio3",
-    "image": "/portfolio/next-crypto-tracker.gif",
-    "alt": "Nairobi color theme",
-    "title": "Nairobi Night Color Theme",
-    "preview": "https://marketplace.visualstudio.com/items?itemName=JaneTracyMuthoni.nairobi-night",
-    "source": "https://github.com/muchirijane/Nairobi-Night-Color-Theme",
-    "stack": ["VS-Code"],
-    "content": "Nairobi Night is a VS code colour theme that comes in both light mode and dark mode. Got inspirition from the city under the sun and the beautiful lights at night along the streets."
   },
   {
     "id": "portfolio4",
