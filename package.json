@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prettier-format": "npx prettier --write",
+    "prettier-check": "npx prettier --check",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -23,6 +25,7 @@
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
-    "babel-plugin-prismjs": "^2.0.1"
+    "babel-plugin-prismjs": "^2.0.1",
+    "prettier": "2.4.1"
   }
 }
