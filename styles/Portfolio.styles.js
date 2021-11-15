@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { device } from "../components/Theme/Theme";
+import styled from 'styled-components'
+import { device } from '../components/Theme/Theme'
 export const PortfolioContainer = styled.section`
   width: 98%;
   margin-top: 10rem;
@@ -13,7 +13,7 @@ export const PortfolioContainer = styled.section`
   button {
     margin-top: 6rem;
   }
-`;
+`
 export const FeaturedPortfolios = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
@@ -24,7 +24,7 @@ export const FeaturedPortfolios = styled.div`
   @media ${device.laptopS} {
     grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
   }
-`;
+`
 export const PortfolioContent = styled.div`
   width: 46rem;
   min-height: 58rem;
@@ -53,13 +53,13 @@ export const PortfolioContent = styled.div`
   @media ${device.desktop} {
     width: 60rem;
   }
-`;
+`
 export const PortfolioImage = styled.div`
   background: rgba(0, 0, 0, 0.3);
   img {
     background: var(--colour-white);
   }
-`;
+`
 export const PortfolioText = styled.div`
   background-color: ${({ theme }) => theme.tertiaryColor};
   color: ${({ theme }) => theme.darkerColor};
@@ -81,7 +81,7 @@ export const PortfolioText = styled.div`
     font-size: clamp(1.7rem, 80%, 9rem);
     letter-spacing: 1px;
   }
-`;
+`
 export const PortfolioStack = styled.span`
   background-color: var(--lighter-pink);
   box-shadow: var(--pink-shadow);
@@ -92,14 +92,17 @@ export const PortfolioStack = styled.span`
   display: inline-block;
   margin-right: 1rem;
   margin-bottom: 1rem;
-`;
+`
 
 export const PortfolioLinkContainer = styled.div`
   margin-top: 3.4rem;
-`;
+  display: flex;
+`
 
 export const PortfolioLink = styled.a`
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.6rem 1.5rem;
   font-size: 1.4rem;
 
@@ -113,4 +116,4 @@ export const PortfolioLink = styled.a`
   @media ${device.mobileS} {
     margin-bottom: 2rem;
   }
-`;
+`

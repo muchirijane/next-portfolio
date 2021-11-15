@@ -31,18 +31,12 @@
   },
   {
     "id": "portfolio4",
-    "image": "/portfolio/next-crypto-tracker.gif",
-    "alt": "Home made website",
-    "title": "HomeMade Website",
-    "preview": "https://muchirijane.github.io/Home-made-React/",
-    "source": "https://github.com/muchirijane/Home-made-React",
-    "stack": [
-      "React",
-      "Gatsby",
-      "styled-compoents",
-      "Framer-Motion",
-      " Graphql"
-    ],
-    "content": "A food website for ordering food that you can cook at home by following recipe guidelines. The website is built with React and styled-components. This was a great practice to transform my Figma design into a React site."
+    "image": "/portfolio/product-site.png",
+    "alt": "Product Agency website preview",
+    "title": "Product Agency website",
+    "preview": "https://next-product-site.vercel.app/",
+    "source": "https://github.com/muchirijane/next-product-site",
+    "stack": ["Javascript", "React", "Next JS", "Material UI| MUI"],
+    "content": "Product website is a design agency that creates the most intuitive ways to make a better User Experience for your products. This is by following tools, tutorials and experts they are in their team. This site was created as a way Open Source project for Hacktoberfest 2021. Developer from the open source community made this website from the design to the live site with Next JS and Material UI(MUI)."
   }
 ]

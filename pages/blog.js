@@ -1,5 +1,6 @@
 import { createClient } from 'contentful'
 import Head from 'next/head'
+
 import Layout from '../components/layout/Layout'
 import BlogCard from '../components/template/BlogCard'
 import { BlogWrapper, BlogContainer } from '../styles/Blog.styles'

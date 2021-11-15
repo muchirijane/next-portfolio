@@ -10,6 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "contentful": "^8.4.2",
     "next": "11.0.0",
     "next-pwa": "^5.2.24",
