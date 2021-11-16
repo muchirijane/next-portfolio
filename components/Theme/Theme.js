@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 export const lightTheme = {
   body: '#F5F5F5',
@@ -7,6 +7,8 @@ export const lightTheme = {
   toggleBorder: '#FFF',
   background: '#363537',
   linkColor: `#BA135D`,
+  lightGrey: '#C4C4C4',
+  darkGrey: '#BDBCBC',
 
   filterBg: 'none',
   scollarBg: '#C4C4C4',
@@ -18,7 +20,7 @@ export const lightTheme = {
   secondaryTextColor: '#000',
   tertiaryColor: '#FCFCFC',
   darkerColor: '#262626',
-  codeBg: '#FCFCFC',
+  codeBg: '#E6E6E6',
   navbarShadow: '0px 20px 30px rgba(0, 0, 0, 0.2);',
   bigShadow: '0px 10px 40px rgba(0, 0, 0, 0.1)',
   smallShadow: '0px 5px 20px rgba(0, 0, 0, 0.1)',
@@ -28,6 +30,7 @@ export const darkTheme = {
   body: '#161616',
   text: '#FAFAFA',
   grey: '#999',
+  lightGrey: '#333',
   toggleBorder: '#6B8096',
   background: '#999',
   linkColor: `#E861A4`,

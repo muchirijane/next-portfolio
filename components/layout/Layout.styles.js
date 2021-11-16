@@ -166,6 +166,9 @@ export const Container = styled.main`
   z-index: 1000;
   margin: 0 20rem;
   margin-right: 10rem;
+  scroll-behavior: smooth;
+
+  overflow-x: clip;
 
   @media ${device.laptopL} {
     margin: 0 10rem;

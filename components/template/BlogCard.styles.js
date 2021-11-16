@@ -4,14 +4,14 @@ import { device } from '../Theme/Theme'
 export const BlogContent = styled.div`
   cursor: pointer;
   width: 36rem;
-  background: #242424;
+  background-color: ${({ theme }) => theme.codeBg};
   border-radius: 2rem;
-  border: 1px solid #444;
+  border: 1px solid ${({ theme }) => theme.darkGrey};
   overflow: hidden;
 
   &:hover {
     transition: all 0.2s ease;
-    background: #333;
+    background-color: ${({ theme }) => theme.lightGrey};
 
     img {
       transition: all 0.2s cubic-bezier(0.88, 0.17, 0.05, 1);
@@ -44,6 +44,7 @@ export const BlogTagWrapper = styled.div`
   margin-top: 2rem;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   span {
     background: #444;
 

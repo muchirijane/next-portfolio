@@ -72,7 +72,7 @@ export const PostContainer = styled.section`
   }
 
   pre {
-    background-color: ${({ theme }) => theme.codeBg};
+    background-color: '#141414';
 
     box-shadow: var(--medium-shadow);
     padding: 16px;
@@ -109,6 +109,8 @@ export const PostContainer = styled.section`
 
 export const PostTags = styled.div`
   margin-bottom: 8rem;
+  display: flex;
+  flex-wrap: wrap;
   span {
     background: linear-gradient(
       90deg,

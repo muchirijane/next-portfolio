@@ -13,7 +13,7 @@ export const BlogWrapper = styled.section`
 
 export const BlogContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-column-gap: 5rem;
   grid-row-gap: 2rem;
 
