@@ -17,6 +17,10 @@ export const BlogContainer = styled.div`
   grid-column-gap: 5rem;
   grid-row-gap: 2rem;
 
+  @media only screen and (min-width: 1300px) {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+
   & > div {
     width: 94%;
   }
