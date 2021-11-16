@@ -1,5 +1,4 @@
 import Prism from 'prismjs'
-import '../Theme/prism.css'
 
 import { useEffect } from 'react'
 

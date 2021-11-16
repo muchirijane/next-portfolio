@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from "styled-components";
-import { device } from "../Theme/Theme";
+import styled, { createGlobalStyle } from 'styled-components'
+import { device } from '../Theme/Theme'
 const GlobalStyles = createGlobalStyle`
 
 *,
@@ -88,6 +88,7 @@ button{
   cursor: pointer;
 background: ${({ theme }) => theme.secondaryColor};
 color: ${({ theme }) => theme.primary};
+border-radius: .5rem;
 
 
 &:hover{
@@ -116,6 +117,7 @@ border: 1px solid ${({ theme }) => theme.secondaryColor};
 
 color: ${({ theme }) => theme.secondaryColor};
 background: none;
+border-radius: .5rem;
 
 
 &:hover{
@@ -152,9 +154,9 @@ footer{
   }
 }
 
-`;
+`
 
-export default GlobalStyles;
+export default GlobalStyles
 
 export const Container = styled.main`
   display: flex;
@@ -178,4 +180,4 @@ export const Container = styled.main`
   @media ${device.mobileM} {
     margin: 0 1.4rem;
   }
-`;
+`

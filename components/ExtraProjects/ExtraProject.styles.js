@@ -29,6 +29,7 @@ export const ProjectContent = styled.div`
   background-color: ${({ theme }) => theme.tertiaryColor};
   box-shadow: ${({ theme }) => theme.bigShadow};
   padding: 3rem 2.5rem;
+  border-radius: 2rem;
   h3 {
     font-size: clamp(1.8rem 60% 7rem);
     font-weight: 800;

@@ -29,6 +29,8 @@ export const PortfolioContent = styled.div`
   width: 46rem;
   min-height: 58rem;
   position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
   box-shadow: ${({ theme }) => theme.bigShadow};
 
   @media ${device.laptopL} {
