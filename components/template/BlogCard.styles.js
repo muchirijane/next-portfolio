@@ -11,7 +11,7 @@ export const BlogContent = styled.div`
 
   &:hover {
     transition: all 0.2s cubic-bezier(0.88, 0.17, 0.05, 1);
-    box-shadow: var(--medium-shadow);
+    background: #333;
 
     img {
       transition: all 0.2s cubic-bezier(0.88, 0.17, 0.05, 1);
