@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import '../components/Theme/prism.css'
+import '../components/Theme/prism-tomorrow.css'
 
 import useDarkMode from 'use-dark-mode'
 import { ThemeProvider } from 'styled-components'
