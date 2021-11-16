@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-// import '../components/Theme/prism.css'
-import '../components/Theme/prism-duotone-dark.css'
+import '../components/Theme/prism.css'
+
 import useDarkMode from 'use-dark-mode'
 import { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme, GlobalStyles } from '../components/Theme/Theme'

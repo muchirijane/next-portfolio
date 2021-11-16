@@ -99,6 +99,7 @@ export const PostContainer = styled.section`
     code {
       max-width: 80%;
       text-shadow: none;
+      background: transparent;
     }
   }
   li {
@@ -117,6 +118,7 @@ export const PostTags = styled.div`
     color: var(--colour-white);
     padding: 0.5rem;
     border-radius: 0.4rem;
+    margin-bottom: 1rem;
     &:not(:last-child) {
       margin-right: 2rem;
     }

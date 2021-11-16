@@ -1,22 +1,26 @@
 import styled from 'styled-components'
+import { device } from '../Theme/Theme'
 
 export const BlogContent = styled.div`
   cursor: pointer;
   width: 36rem;
-  transition: all 0.2s cubic-bezier(0.88, 0.17, 0.05, 1);
   background: #242424;
   border-radius: 2rem;
   border: 1px solid #444;
   overflow: hidden;
 
   &:hover {
-    transition: all 0.2s cubic-bezier(0.88, 0.17, 0.05, 1);
+    transition: all 0.2s ease;
     background: #333;
 
     img {
       transition: all 0.2s cubic-bezier(0.88, 0.17, 0.05, 1);
       transform: scale(1.1);
     }
+  }
+
+  @media ${device.mobileL} {
+    width: 80%;
   }
 `
 
@@ -49,6 +53,8 @@ export const BlogTagWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
     &:not(:last-child) {
       padding-right: 2rem;
       margin-right: 1rem;
