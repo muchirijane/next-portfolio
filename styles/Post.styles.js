@@ -85,6 +85,7 @@ export const PostContainer = styled.section`
     border-radius: 12px;
     overflow-x: auto;
     white-space: pre;
+    border: none;
 
     &::-webkit-scrollbar:horizontal {
       height: 0.4rem;
@@ -97,6 +98,7 @@ export const PostContainer = styled.section`
 
     code {
       max-width: 80%;
+      text-shadow: none;
     }
   }
   li {
