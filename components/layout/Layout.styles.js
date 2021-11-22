@@ -82,6 +82,16 @@ button{
 	
 }
 
+.textLink{
+  color: ${({ theme }) => theme.linkColor};
+  text-decoration: none;
+
+  &:hover {
+    transition: all .3s cubic-bezier(.88, .17, .05, 1) ;
+    text-decoration: underline;
+  }
+}
+
 .link{
   display: inline-block;
   text-decoration: none;

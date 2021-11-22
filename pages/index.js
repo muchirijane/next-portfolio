@@ -57,6 +57,35 @@ export default function Index() {
                 websites and making them user friendly and easy to navigate.
                 User Expericence is important in what I create.{' '}
               </p>
+              <p>
+                Video Intro:{' '}
+                <a
+                  className="textLink"
+                  href="https://www.loom.com/share/b0d4906fcf0d4194b94d727aa7da9176"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Introducing myself
+                </a>
+                ,{' '}
+                <a
+                  className="textLink"
+                  href="https://www.loom.com/share/15a4b6e071164a12a40235b321d5c9a4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Why I started programming
+                </a>{' '}
+                and{' '}
+                <a
+                  className="textLink"
+                  href="https://www.loom.com/share/078fb8e997744fe6a402fa1ec2dabd4b"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  What cool project I have worked on recently.
+                </a>
+              </p>
 
               <Link href="/#contact">
                 <PageLink className="link">
