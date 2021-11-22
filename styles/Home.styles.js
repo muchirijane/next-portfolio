@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import { device } from "../components/Theme/Theme";
+import styled from 'styled-components'
+import { device } from '../components/Theme/Theme'
 export const HomeContainer = styled.section`
-  margin: 10rem auto;
+  margin: 7rem auto;
   width: 90%;
   @media ${device.tabletS} {
     margin: 3rem auto;
   }
-`;
+`
 export const HomeContent = styled.div`
   height: 60vh;
   width: 100%;
@@ -54,16 +54,16 @@ export const HomeContent = styled.div`
   @media ${device.tablet} {
     margin-top: 0rem;
   }
-`;
+`
 export const HomeText = styled.div`
   margin-top: 3rem;
-`;
+`
 export const Span = styled.span`
   color: ${({ theme }) => theme.linkColor};
-`;
+`
 
 export const PageLink = styled.a`
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: 700;
   padding: 1.2rem 4rem;
@@ -82,14 +82,14 @@ export const PageLink = styled.a`
     margin-top: 3rem;
     padding: 1rem 4rem;
   }
-`;
+`
 
 export const AboutContainer = styled.section`
   margin-top: 16rem;
   width: 90%;
   h2 {
     font-size: clamp(4rem, 90%, 9rem);
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   p {
@@ -104,11 +104,11 @@ export const AboutContainer = styled.section`
     margin: 12rem auto;
     width: 100%;
   }
-`;
+`
 export const AboutLink = styled.a`
   font-size: 1.8rem;
   display: inline-block;
   padding: 1rem 3rem;
   margin-top: 4rem;
   text-align: center;
-`;
+`
