@@ -1,20 +1,20 @@
 [
   {
     "id": "portfolio1",
-    "image": "/portfolio/finsweet-site.png",
-    "alt": "FinSweet Restaurant website",
-    "title": "FinSweet Restaurant",
-    "preview": "https://finsweet-restaurant.vercel.app/",
-    "source": "https://github.com/muchirijane/next-finsweet-restaurant",
-    "stack": ["React", "Next Js", "Material UI", "Framer-Motion"],
-    "content": "This is a restaurant website that showcase why others should enjoy their meals which is sourced from their farm and from the locals. By making meals that are organic they have increased their reach to other states and through the site others can order meals or book a reservation. Used Next Js and Material UI to create the front end side and framer motion for animations. "
+    "image": "/portfolio/note-app.png",
+    "alt": "Firebase Note App",
+    "title": "Firebase Note App",
+    "preview": "https://firebase-note-app.vercel.app/",
+    "source": "https://github.com/muchirijane/react-note-app",
+    "stack": ["React",  "Material UI", "Firebase"],
+    "content": "For the app functionality, a user can create notes in the create page and they will be stored in firebase cloud. You can also delete them with the delete button if you have finished the task.\nThe cards have categories to label the importance of your notes. Example, work, money, todos, reminder or personal."
   },
   {
     "id": "portfolio2",
     "image": "/portfolio/airbnb.png",
-    "alt": "Budgetfy Financial App",
+    "alt": "Airbnb clone app App",
     "title": "Airbnb Clone App",
-    "preview": "https://next-budget-app.vercel.app/",
+    "preview": "https://airbnb-site.vercel.app/",
     "source": "https://github.com/muchirijane/airbnb-sanity-frontend",
     "stack": ["Javascript", "React-JS", "Next Js", "Sanity"],
     "content": " Airbnb frontend clone was created from scratch with data created from sanity io as a backend with different schemas. In the backend you can add details about the property like: location, description, multiple images, reviews and the hosts of each property. The frontend was built with Next to fetch data from sanity to render it to the client side. "
