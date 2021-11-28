@@ -31,6 +31,7 @@ export default function Contact() {
                   {data.devProfile}
                 </DevLink>
               </p>
+              <p>Location: Dubai</p>
 
               <ContactSocials>
                 <h3>{data.subTitle}</h3>
