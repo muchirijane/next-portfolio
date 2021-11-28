@@ -105,9 +105,13 @@ export const AboutContainer = styled.section`
   }
 `
 export const AboutLink = styled.a`
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   display: inline-block;
   padding: 1rem 3rem;
   margin-top: 4rem;
   text-align: center;
+
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
 `

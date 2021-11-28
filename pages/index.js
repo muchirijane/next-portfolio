@@ -55,7 +55,7 @@ export default function Index() {
               <p>
                 I am a self taught front end developer, who enjoys coding cool
                 websites and making them user friendly and easy to navigate.
-                User Expericence is important in what I create.{' '}
+                User Experience is important in what I create.{' '}
               </p>
               <p>
                 Video Intro:{' '}
@@ -147,6 +147,15 @@ export default function Index() {
             ))}
             <Link href="/about">
               <AboutLink className="link">Learn More</AboutLink>
+            </Link>
+            <Link
+              href="/Jane_Muchiri_Resume.pdf"
+              role="button"
+              download="proposed_file_name"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AboutLink className="outline-link">View Resume</AboutLink>
             </Link>
           </AboutContainer>
           <Portfolio />
